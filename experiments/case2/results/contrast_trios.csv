@@ -1,0 +1,3 @@
+group,features,pr_auc,sd_folds
+contaminant_trio,Dimethyl sulfone;isopropanol;methanol,0.9538176874771119,0.025235456225439275
+biology_trio,lipoproteins;L-valine;L-tyrosine,0.9593702829084034,0.030711284147183784

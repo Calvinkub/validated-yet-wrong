@@ -1,0 +1,31 @@
+d,rep,spike_shap_rank,spike_mean_abs_shap,top5,recursive_step_removed,recursive_order_until_spike
+0.75,0,13,0.1832160010933876,Dimethyl sulfone;isopropanol;methanol;L-valine;lipoproteins,,Dimethyl sulfone;isopropanol;L-valine;glycine;methanol;L-tyrosine;D-phenylalanine;lipoproteins;Pyruvic acid;L-allo-Isoleucine;acetoacetate
+0.75,1,10,0.2348753571510315,Dimethyl sulfone;isopropanol;methanol;L-valine;lipoproteins,11.0,Dimethyl sulfone;isopropanol;L-valine;glycine;L-tyrosine;methanol;D-phenylalanine;lipoproteins;Pyruvic acid;L-allo-Isoleucine;SPIKE
+0.75,2,7,0.4065298646688461,Dimethyl sulfone;isopropanol;methanol;lipoproteins;L-valine,,Dimethyl sulfone;isopropanol;L-valine;glycine;methanol;L-tyrosine;lipoproteins;D-phenylalanine;L-allo-Isoleucine;Pyruvic acid;histidine
+0.75,3,14,0.1521899566054344,Dimethyl sulfone;isopropanol;methanol;L-valine;lipoproteins,,Dimethyl sulfone;isopropanol;L-valine;glycine;L-tyrosine;methanol;D-phenylalanine;L-allo-Isoleucine;lipoproteins;Pyruvic acid;L-leucine
+0.75,4,19,0.03500775955617428,Dimethyl sulfone;isopropanol;methanol;L-valine;lipoproteins,,Dimethyl sulfone;isopropanol;L-valine;glycine;methanol;L-tyrosine;D-phenylalanine;lipoproteins;Pyruvic acid;L-allo-Isoleucine;acetoacetate
+0.75,5,10,0.2312321826815605,Dimethyl sulfone;isopropanol;methanol;L-valine;lipoproteins,11.0,Dimethyl sulfone;isopropanol;L-valine;glycine;methanol;L-tyrosine;D-phenylalanine;L-allo-Isoleucine;Pyruvic acid;lipoproteins;SPIKE
+0.75,6,13,0.15910324156284333,Dimethyl sulfone;isopropanol;methanol;L-valine;lipoproteins,,Dimethyl sulfone;isopropanol;L-valine;glycine;L-tyrosine;methanol;D-phenylalanine;lipoproteins;Pyruvic acid;L-allo-Isoleucine;L-leucine
+0.75,7,7,0.40186156034469606,Dimethyl sulfone;isopropanol;L-valine;methanol;lipoproteins,11.0,Dimethyl sulfone;isopropanol;L-valine;glycine;methanol;L-tyrosine;D-phenylalanine;Pyruvic acid;L-allo-Isoleucine;lipoproteins;SPIKE
+0.75,8,4,0.7504299998283386,Dimethyl sulfone;isopropanol;L-valine;SPIKE;methanol,11.0,Dimethyl sulfone;isopropanol;L-valine;glycine;L-tyrosine;methanol;D-phenylalanine;L-allo-Isoleucine;lipoproteins;Pyruvic acid;SPIKE
+0.75,9,3,0.784449714422226,Dimethyl sulfone;isopropanol;SPIKE;methanol;L-valine,4.0,Dimethyl sulfone;isopropanol;L-valine;SPIKE
+1.25,0,3,1.2185805797576905,Dimethyl sulfone;isopropanol;SPIKE;methanol;L-valine,3.0,Dimethyl sulfone;isopropanol;SPIKE
+1.25,1,3,0.842108178138733,Dimethyl sulfone;isopropanol;SPIKE;L-valine;lipoproteins,4.0,Dimethyl sulfone;isopropanol;L-valine;SPIKE
+1.25,2,3,0.7965838611125946,Dimethyl sulfone;isopropanol;SPIKE;methanol;L-valine,5.0,Dimethyl sulfone;isopropanol;L-valine;methanol;SPIKE
+1.25,3,6,0.5177842974662781,Dimethyl sulfone;isopropanol;methanol;lipoproteins;L-valine,4.0,Dimethyl sulfone;isopropanol;L-valine;SPIKE
+1.25,4,3,1.2907370567321776,Dimethyl sulfone;isopropanol;SPIKE;methanol;L-valine,3.0,Dimethyl sulfone;isopropanol;SPIKE
+1.25,5,4,0.6425607860088348,Dimethyl sulfone;isopropanol;methanol;SPIKE;L-valine,8.0,Dimethyl sulfone;isopropanol;L-valine;glycine;L-tyrosine;methanol;D-phenylalanine;SPIKE
+1.25,6,3,0.9369974911212922,Dimethyl sulfone;isopropanol;SPIKE;methanol;L-valine,4.0,Dimethyl sulfone;isopropanol;L-valine;SPIKE
+1.25,7,3,0.8741500318050385,Dimethyl sulfone;isopropanol;SPIKE;L-valine;lipoproteins,3.0,Dimethyl sulfone;isopropanol;SPIKE
+1.25,8,3,0.977695894241333,Dimethyl sulfone;isopropanol;SPIKE;methanol;L-valine,4.0,Dimethyl sulfone;isopropanol;L-valine;SPIKE
+1.25,9,3,0.862017822265625,Dimethyl sulfone;isopropanol;SPIKE;methanol;lipoproteins,5.0,Dimethyl sulfone;isopropanol;L-valine;glycine;SPIKE
+1.75,0,2,1.2979623913764953,Dimethyl sulfone;SPIKE;isopropanol;methanol;L-tyrosine,2.0,Dimethyl sulfone;SPIKE
+1.75,1,1,1.922730767726898,SPIKE;Dimethyl sulfone;isopropanol;glycine;L-tyrosine,1.0,SPIKE
+1.75,2,2,1.368317198753357,Dimethyl sulfone;SPIKE;isopropanol;methanol;L-valine,2.0,Dimethyl sulfone;SPIKE
+1.75,3,2,1.4001021981239319,Dimethyl sulfone;SPIKE;isopropanol;L-valine;L-tyrosine,2.0,Dimethyl sulfone;SPIKE
+1.75,4,1,2.1911004781723022,SPIKE;Dimethyl sulfone;isopropanol;methanol;lipoproteins,1.0,SPIKE
+1.75,5,1,1.7188665747642518,SPIKE;Dimethyl sulfone;isopropanol;L-valine;methanol,1.0,SPIKE
+1.75,6,2,1.2037010550498963,Dimethyl sulfone;SPIKE;isopropanol;methanol;L-valine,3.0,Dimethyl sulfone;isopropanol;SPIKE
+1.75,7,1,1.6644660592079163,SPIKE;Dimethyl sulfone;isopropanol;methanol;L-valine,1.0,SPIKE
+1.75,8,1,1.8257343888282775,SPIKE;Dimethyl sulfone;isopropanol;methanol;L-valine,1.0,SPIKE
+1.75,9,1,1.9481555461883544,SPIKE;Dimethyl sulfone;isopropanol;L-valine;methanol,1.0,SPIKE

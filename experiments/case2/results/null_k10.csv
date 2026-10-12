@@ -1,0 +1,501 @@
+k,draw,removed,pr_auc
+10,0,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;hypoxanthine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;L-tyrosine,0.9537864723399089
+10,1,acetate;L-valine;hypoxanthine;creatinine;histidine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9605066130602353
+10,2,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;creatinine;glycine;isopropanol;L-Lactic acid;L-leucine;D-phenylalanine;Pyruvic acid,0.9600645879076976
+10,3,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;citrate;creatinine;L-glutamine;glycine;L-Lactic acid;Pyruvic acid;L-tyrosine,0.9716214498693231
+10,4,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;creatinine;L-glutamine;glycine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9656826801464489
+10,5,acetate;L-alanine;L-valine;hypoxanthine;citrate;glycine;L-allo-Isoleucine;L-leucine;Dimethyl sulfone;L-tyrosine,0.9564974865495763
+10,6,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;isopropanol;L-leucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9173293812651743
+10,7,acetate;L-alanine;citrate;L-glutamine;histidine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9663672791227741
+10,8,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;citrate;creatinine;histidine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9568705358866058
+10,9,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;citrate;creatinine;L-glutamine;isopropanol;lipoproteins;Pyruvic acid,0.9573809285095635
+10,10,acetate;acetoacetate;L-alanine;L-valine;histidine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine,0.9291879666205074
+10,11,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;citrate;histidine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9542782646849437
+10,12,acetate;acetoacetate;hypoxanthine;creatinine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.954010051679299
+10,13,L-alanine;hypoxanthine;citrate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Dimethyl sulfone;D-phenylalanine,0.968089312146024
+10,14,(R)-3-Hydroxybutyric acid;acetate;L-valine;citrate;glycine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;L-tyrosine,0.940640995687612
+10,15,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone,0.9498911544975384
+10,16,(R)-3-Hydroxybutyric acid;citrate;glycine;L-allo-Isoleucine;isopropanol;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.958215477455262
+10,17,acetate;acetoacetate;hypoxanthine;creatinine;glycine;histidine;isopropanol;lipoproteins;Pyruvic acid;L-tyrosine,0.9467651904947489
+10,18,(R)-3-Hydroxybutyric acid;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid,0.9601150334536739
+10,19,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;creatinine;glycine;L-allo-Isoleucine;isopropanol;Pyruvic acid;L-tyrosine,0.9585536365227714
+10,20,L-valine;hypoxanthine;citrate;creatinine;glycine;histidine;L-allo-Isoleucine;isopropanol;methanol;Pyruvic acid,0.9580926766017231
+10,21,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;L-leucine;L-tyrosine,0.9715926854868799
+10,22,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;citrate;creatinine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine,0.959546265109302
+10,23,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone,0.9617519421376984
+10,24,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;citrate;L-allo-Isoleucine;lipoproteins;methanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9578170254506254
+10,25,acetoacetate;L-alanine;hypoxanthine;citrate;L-glutamine;glycine;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9651759895172676
+10,26,L-valine;creatinine;L-glutamine;glycine;histidine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid,0.9636973376853407
+10,27,acetoacetate;L-alanine;L-valine;citrate;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;methanol;Pyruvic acid,0.9685883491506582
+10,28,acetoacetate;L-alanine;L-valine;citrate;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;L-tyrosine,0.9486897822128745
+10,29,(R)-3-Hydroxybutyric acid;acetoacetate;creatinine;histidine;L-Lactic acid;L-leucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine,0.9464617766036842
+10,30,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;citrate;L-glutamine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;D-phenylalanine,0.97015491715995
+10,31,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;citrate;glycine;histidine;isopropanol;lipoproteins;Pyruvic acid;L-tyrosine,0.9481316435018904
+10,32,L-alanine;L-valine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9593895365131444
+10,33,acetate;L-alanine;hypoxanthine;citrate;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;methanol;D-phenylalanine,0.9736476950125743
+10,34,acetate;L-valine;hypoxanthine;L-glutamine;histidine;L-Lactic acid;L-leucine;methanol;D-phenylalanine;L-tyrosine,0.9639535040691325
+10,35,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;citrate;L-glutamine;histidine;isopropanol;L-Lactic acid;L-leucine;L-tyrosine,0.9601546815823633
+10,36,L-alanine;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;Dimethyl sulfone;D-phenylalanine,0.9583428336811532
+10,37,(R)-3-Hydroxybutyric acid;acetoacetate;citrate;glycine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid,0.9324627454396999
+10,38,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;glycine;L-allo-Isoleucine;L-leucine;lipoproteins;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9670844659339387
+10,39,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;citrate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;D-phenylalanine;Pyruvic acid,0.9698698280325688
+10,40,(R)-3-Hydroxybutyric acid;hypoxanthine;citrate;creatinine;L-allo-Isoleucine;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9605040958945191
+10,41,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9444014211891373
+10,42,(R)-3-Hydroxybutyric acid;acetate;L-alanine;hypoxanthine;glycine;histidine;L-allo-Isoleucine;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9576290487418827
+10,43,acetoacetate;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.963009535713773
+10,44,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;citrate;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine,0.971584062326199
+10,45,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-glutamine;glycine;isopropanol;L-Lactic acid;lipoproteins;Pyruvic acid;L-tyrosine,0.9534254002937863
+10,46,(R)-3-Hydroxybutyric acid;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9595084843603303
+10,47,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;L-glutamine;glycine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9707334502048703
+10,48,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-valine;creatinine;lipoproteins;methanol;Dimethyl sulfone;Pyruvic acid,0.939454371092669
+10,49,acetoacetate;citrate;L-glutamine;histidine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9474863532874883
+10,50,(R)-3-Hydroxybutyric acid;hypoxanthine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;Pyruvic acid;L-tyrosine,0.9568239912971511
+10,51,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone,0.9587808543791719
+10,52,acetoacetate;L-alanine;L-valine;citrate;L-glutamine;glycine;histidine;L-Lactic acid;L-leucine;D-phenylalanine,0.972412378124501
+10,53,acetate;acetoacetate;L-valine;hypoxanthine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine,0.9640678006586703
+10,54,acetate;acetoacetate;L-alanine;L-valine;hypoxanthine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;Dimethyl sulfone,0.9393517441086567
+10,55,(R)-3-Hydroxybutyric acid;acetate;L-alanine;hypoxanthine;citrate;L-glutamine;glycine;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9699345054328904
+10,56,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;hypoxanthine;L-glutamine;L-allo-Isoleucine;L-leucine;lipoproteins;Pyruvic acid,0.9676882088102208
+10,57,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;citrate;creatinine;L-glutamine;histidine;L-allo-Isoleucine;methanol,0.9695794156491934
+10,58,(R)-3-Hydroxybutyric acid;acetate;L-valine;hypoxanthine;citrate;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;Pyruvic acid,0.9750959681509377
+10,59,L-alanine;citrate;creatinine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;methanol;D-phenylalanine;Pyruvic acid,0.9624575450667673
+10,60,(R)-3-Hydroxybutyric acid;L-alanine;citrate;L-glutamine;glycine;isopropanol;lipoproteins;methanol;Dimethyl sulfone;Pyruvic acid,0.9383024113829782
+10,61,acetate;acetoacetate;L-valine;citrate;glycine;L-allo-Isoleucine;L-leucine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9453728313182239
+10,62,acetoacetate;L-valine;hypoxanthine;citrate;creatinine;glycine;histidine;L-Lactic acid;L-leucine;methanol,0.9664320815431904
+10,63,L-alanine;L-valine;hypoxanthine;glycine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins;D-phenylalanine;Pyruvic acid,0.9673587036363217
+10,64,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-valine;citrate;L-glutamine;L-leucine;methanol;L-tyrosine,0.9603707354255924
+10,65,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;citrate;creatinine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Pyruvic acid,0.9654781561811955
+10,66,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;citrate;histidine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine,0.9605794780739828
+10,67,acetate;acetoacetate;L-alanine;L-valine;hypoxanthine;histidine;L-leucine;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9666715934451028
+10,68,(R)-3-Hydroxybutyric acid;acetoacetate;citrate;creatinine;L-allo-Isoleucine;isopropanol;L-Lactic acid;methanol;D-phenylalanine;L-tyrosine,0.9613076089093333
+10,69,acetate;L-alanine;citrate;glycine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins;D-phenylalanine;L-tyrosine,0.9690076632549045
+10,70,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;hypoxanthine;histidine;isopropanol;lipoproteins;methanol;Dimethyl sulfone,0.8987300654321047
+10,71,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;citrate;L-glutamine;glycine;histidine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9534571560302274
+10,72,acetoacetate;citrate;creatinine;L-glutamine;glycine;histidine;L-Lactic acid;lipoproteins;D-phenylalanine;Pyruvic acid,0.9721236005894076
+10,73,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;citrate;L-glutamine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;Dimethyl sulfone,0.9477741194672853
+10,74,hypoxanthine;citrate;creatinine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9648611702000089
+10,75,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;L-glutamine;glycine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine,0.9474795238473765
+10,76,acetate;L-alanine;hypoxanthine;citrate;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9577418803310654
+10,77,acetoacetate;hypoxanthine;citrate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;D-phenylalanine;L-tyrosine,0.9589606837013551
+10,78,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;hypoxanthine;citrate;L-allo-Isoleucine;L-Lactic acid;L-leucine;Pyruvic acid;L-tyrosine,0.9696152443322009
+10,79,acetoacetate;L-alanine;hypoxanthine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;Dimethyl sulfone,0.9536251374308577
+10,80,acetate;L-valine;hypoxanthine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9407084330233131
+10,81,(R)-3-Hydroxybutyric acid;acetate;L-valine;citrate;creatinine;glycine;L-allo-Isoleucine;isopropanol;Dimethyl sulfone;L-tyrosine,0.9103594635981846
+10,82,(R)-3-Hydroxybutyric acid;L-valine;citrate;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;methanol;D-phenylalanine,0.9406778676574423
+10,83,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;glycine;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9554849543114404
+10,84,acetate;L-alanine;hypoxanthine;citrate;creatinine;glycine;histidine;L-allo-Isoleucine;L-leucine;D-phenylalanine,0.9750743944748582
+10,85,acetate;acetoacetate;L-valine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins,0.9535412544576124
+10,86,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;citrate;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone,0.9645138992036185
+10,87,(R)-3-Hydroxybutyric acid;citrate;creatinine;L-glutamine;L-allo-Isoleucine;isopropanol;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9474902003204959
+10,88,(R)-3-Hydroxybutyric acid;acetate;L-valine;creatinine;histidine;L-allo-Isoleucine;isopropanol;lipoproteins;D-phenylalanine;Pyruvic acid,0.9544375456143783
+10,89,acetate;acetoacetate;L-valine;citrate;creatinine;L-glutamine;glycine;isopropanol;lipoproteins;Pyruvic acid,0.9515354821077757
+10,90,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;citrate;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine,0.9696466019529096
+10,91,acetoacetate;hypoxanthine;citrate;glycine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;Pyruvic acid,0.9579176917684691
+10,92,L-alanine;citrate;L-glutamine;glycine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;methanol;D-phenylalanine;L-tyrosine,0.9665609809000222
+10,93,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;Dimethyl sulfone,0.9172177288438133
+10,94,hypoxanthine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9356058637720736
+10,95,L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;glycine;isopropanol;L-leucine;methanol;L-tyrosine,0.9684029447804311
+10,96,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;citrate;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;D-phenylalanine;L-tyrosine,0.9687145113208808
+10,97,L-valine;hypoxanthine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;D-phenylalanine;L-tyrosine,0.9626224842170097
+10,98,L-valine;hypoxanthine;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;L-leucine;methanol;Dimethyl sulfone,0.966162061361538
+10,99,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;creatinine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;Pyruvic acid,0.9494998212357069
+10,100,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;creatinine;glycine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.954102050243806
+10,101,L-alanine;L-valine;citrate;creatinine;L-glutamine;glycine;isopropanol;L-Lactic acid;L-leucine;lipoproteins,0.9604204352852974
+10,102,L-alanine;citrate;L-glutamine;glycine;L-leucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9548889478165272
+10,103,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;creatinine;glycine;histidine;L-Lactic acid;lipoproteins;methanol,0.9578251322181941
+10,104,acetate;acetoacetate;L-alanine;L-valine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.948465071082519
+10,105,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;citrate;L-glutamine;histidine;isopropanol;L-Lactic acid;D-phenylalanine;L-tyrosine,0.9664315911394952
+10,106,acetoacetate;L-alanine;hypoxanthine;creatinine;histidine;isopropanol;L-Lactic acid;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9534599900837911
+10,107,acetoacetate;L-alanine;L-valine;hypoxanthine;L-glutamine;histidine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9680207009110434
+10,108,acetate;acetoacetate;L-alanine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;Pyruvic acid,0.9613105411434824
+10,109,acetate;L-alanine;citrate;glycine;histidine;isopropanol;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9388550410005686
+10,110,(R)-3-Hydroxybutyric acid;acetate;L-alanine;hypoxanthine;citrate;L-leucine;lipoproteins;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9691861921695393
+10,111,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;creatinine;L-glutamine;glycine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine,0.9632883115034332
+10,112,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;creatinine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;Dimethyl sulfone;Pyruvic acid,0.942108471860992
+10,113,acetoacetate;L-valine;hypoxanthine;citrate;creatinine;isopropanol;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9388893933327647
+10,114,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;glycine;isopropanol;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9416259834952857
+10,115,L-alanine;L-valine;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;L-tyrosine,0.9611591886036824
+10,116,(R)-3-Hydroxybutyric acid;acetate;L-valine;creatinine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;methanol;D-phenylalanine,0.9429343165645038
+10,117,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;Pyruvic acid,0.9586191826693381
+10,118,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;citrate;isopropanol;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9261574615218819
+10,119,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;citrate;L-glutamine;glycine;L-allo-Isoleucine;L-Lactic acid;lipoproteins,0.9676860495230798
+10,120,(R)-3-Hydroxybutyric acid;L-valine;creatinine;glycine;L-allo-Isoleucine;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9525301247350753
+10,121,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;creatinine;L-glutamine;histidine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9676787543676316
+10,122,(R)-3-Hydroxybutyric acid;acetoacetate;citrate;L-glutamine;glycine;histidine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9558436137172812
+10,123,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;methanol;Dimethyl sulfone,0.9503971790323493
+10,124,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;D-phenylalanine;L-tyrosine,0.9708549997592669
+10,125,acetate;L-valine;hypoxanthine;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;Dimethyl sulfone;Pyruvic acid,0.9459330756036001
+10,126,(R)-3-Hydroxybutyric acid;acetate;L-valine;citrate;L-glutamine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-leucine,0.9634099090545574
+10,127,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;creatinine;L-glutamine;histidine;L-Lactic acid;L-leucine;L-tyrosine,0.9670437251170958
+10,128,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;citrate;L-glutamine;L-allo-Isoleucine;L-Lactic acid;methanol;D-phenylalanine;L-tyrosine,0.9572352315528282
+10,129,acetate;acetoacetate;L-alanine;L-valine;L-glutamine;glycine;L-Lactic acid;lipoproteins;methanol;D-phenylalanine,0.9615061939859014
+10,130,acetate;acetoacetate;L-alanine;L-valine;creatinine;glycine;L-leucine;methanol;D-phenylalanine;L-tyrosine,0.9629331256287809
+10,131,acetoacetate;L-valine;citrate;L-glutamine;glycine;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9497094011829865
+10,132,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;citrate;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9700202281246176
+10,133,acetate;acetoacetate;L-alanine;L-valine;creatinine;L-glutamine;L-allo-Isoleucine;lipoproteins;methanol;L-tyrosine,0.9492642366662417
+10,134,acetate;acetoacetate;L-valine;L-allo-Isoleucine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.931387557233284
+10,135,acetoacetate;L-alanine;L-valine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;isopropanol;methanol;D-phenylalanine,0.9556110021636094
+10,136,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;L-glutamine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;D-phenylalanine,0.9678199518367875
+10,137,(R)-3-Hydroxybutyric acid;acetoacetate;citrate;L-glutamine;histidine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9654450600071824
+10,138,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;citrate;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Pyruvic acid,0.9601334941343963
+10,139,acetate;hypoxanthine;citrate;creatinine;glycine;histidine;L-allo-Isoleucine;L-leucine;D-phenylalanine;Pyruvic acid,0.9744353219926629
+10,140,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;histidine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9635578030506171
+10,141,(R)-3-Hydroxybutyric acid;acetoacetate;citrate;creatinine;L-glutamine;isopropanol;L-Lactic acid;L-leucine;Pyruvic acid;L-tyrosine,0.965109559140598
+10,142,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;citrate;L-glutamine;glycine;histidine;L-allo-Isoleucine;Dimethyl sulfone;Pyruvic acid,0.954035447933083
+10,143,acetoacetate;hypoxanthine;citrate;creatinine;glycine;L-allo-Isoleucine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine,0.9661976946583027
+10,144,(R)-3-Hydroxybutyric acid;acetate;L-alanine;creatinine;L-glutamine;glycine;isopropanol;lipoproteins;D-phenylalanine;Pyruvic acid,0.9614155649547119
+10,145,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;hypoxanthine;citrate;creatinine;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9564470881878456
+10,146,(R)-3-Hydroxybutyric acid;hypoxanthine;L-glutamine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;methanol;Pyruvic acid,0.9604112545688237
+10,147,acetate;L-alanine;L-valine;citrate;L-glutamine;glycine;L-allo-Isoleucine;L-leucine;D-phenylalanine;L-tyrosine,0.9715756321409098
+10,148,acetoacetate;L-valine;creatinine;glycine;histidine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9318587028433565
+10,149,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;L-glutamine;glycine;L-Lactic acid;methanol;Dimethyl sulfone;Pyruvic acid,0.9551111222888649
+10,150,acetate;hypoxanthine;citrate;glycine;histidine;isopropanol;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9467569305354776
+10,151,(R)-3-Hydroxybutyric acid;acetate;L-valine;hypoxanthine;creatinine;isopropanol;L-leucine;lipoproteins;methanol;Pyruvic acid,0.9474529369136946
+10,152,(R)-3-Hydroxybutyric acid;L-valine;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9572611062199625
+10,153,acetate;L-alanine;hypoxanthine;histidine;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9515835395087012
+10,154,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;creatinine;histidine;L-Lactic acid;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9588565908129647
+10,155,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;hypoxanthine;histidine;L-allo-Isoleucine;isopropanol;Dimethyl sulfone;Pyruvic acid,0.9446356135760429
+10,156,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;L-glutamine;glycine;histidine;isopropanol;L-Lactic acid;D-phenylalanine,0.9602847810420531
+10,157,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;histidine;L-allo-Isoleucine;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9520908757526477
+10,158,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;hypoxanthine;citrate;creatinine;histidine;D-phenylalanine;Pyruvic acid,0.9732775431105193
+10,159,(R)-3-Hydroxybutyric acid;acetate;citrate;creatinine;L-glutamine;glycine;histidine;isopropanol;Pyruvic acid;L-tyrosine,0.9653734321782401
+10,160,acetate;L-alanine;creatinine;L-glutamine;glycine;histidine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine,0.967548862236283
+10,161,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;creatinine;glycine;histidine;isopropanol;L-leucine;D-phenylalanine;Pyruvic acid,0.9647135588239163
+10,162,acetate;acetoacetate;L-valine;hypoxanthine;citrate;L-glutamine;histidine;L-allo-Isoleucine;methanol;Pyruvic acid,0.9680694153268639
+10,163,acetate;L-alanine;hypoxanthine;citrate;creatinine;histidine;L-leucine;methanol;D-phenylalanine;Pyruvic acid,0.9715293320901934
+10,164,L-alanine;citrate;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9706821205419357
+10,165,(R)-3-Hydroxybutyric acid;hypoxanthine;creatinine;isopropanol;L-Lactic acid;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9402034874083914
+10,166,acetate;L-valine;hypoxanthine;citrate;creatinine;L-glutamine;L-Lactic acid;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9502325013458869
+10,167,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone,0.9447588852492523
+10,168,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;creatinine;glycine;isopropanol;lipoproteins;Dimethyl sulfone;D-phenylalanine,0.9398857235520923
+10,169,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;creatinine;L-glutamine;glycine;isopropanol;lipoproteins;L-tyrosine,0.9573230454118974
+10,170,citrate;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9359847786468555
+10,171,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;citrate;glycine;histidine;isopropanol;L-Lactic acid;D-phenylalanine;Pyruvic acid,0.9619400879309369
+10,172,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;citrate;creatinine;histidine;L-allo-Isoleucine;L-Lactic acid;methanol;Pyruvic acid,0.9706039210157362
+10,173,acetate;acetoacetate;L-valine;citrate;L-glutamine;L-Lactic acid;L-leucine;lipoproteins;methanol;L-tyrosine,0.95053376383043
+10,174,acetate;acetoacetate;citrate;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9497524678611904
+10,175,acetate;L-glutamine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9274101569818073
+10,176,acetoacetate;L-valine;hypoxanthine;citrate;creatinine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;L-tyrosine,0.965768788443012
+10,177,acetate;L-alanine;hypoxanthine;citrate;creatinine;glycine;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9502226334115261
+10,178,L-alanine;citrate;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9613564101802443
+10,179,L-alanine;L-valine;creatinine;glycine;histidine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;Pyruvic acid,0.938027399243725
+10,180,acetoacetate;L-valine;L-glutamine;histidine;isopropanol;lipoproteins;methanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9277443350966925
+10,181,acetoacetate;L-valine;citrate;glycine;histidine;isopropanol;L-Lactic acid;lipoproteins;D-phenylalanine;L-tyrosine,0.9382853242919231
+10,182,acetate;L-alanine;L-valine;hypoxanthine;histidine;L-allo-Isoleucine;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9443382127980661
+10,183,acetate;acetoacetate;L-alanine;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;methanol;Pyruvic acid,0.9720221287774328
+10,184,L-alanine;L-valine;hypoxanthine;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;lipoproteins;methanol,0.9450043332496522
+10,185,(R)-3-Hydroxybutyric acid;acetate;L-valine;hypoxanthine;glycine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.951630575430477
+10,186,(R)-3-Hydroxybutyric acid;hypoxanthine;citrate;creatinine;glycine;histidine;L-allo-Isoleucine;L-leucine;Pyruvic acid;L-tyrosine,0.9717117493934265
+10,187,acetate;acetoacetate;L-alanine;L-valine;citrate;L-glutamine;isopropanol;L-Lactic acid;Dimethyl sulfone;L-tyrosine,0.9390553063176279
+10,188,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;L-glutamine;glycine;L-Lactic acid;lipoproteins;methanol;L-tyrosine,0.9478083401557446
+10,189,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;creatinine;L-glutamine;histidine;L-leucine;lipoproteins;D-phenylalanine;L-tyrosine,0.9680065485342922
+10,190,L-alanine;hypoxanthine;creatinine;L-glutamine;glycine;histidine;L-allo-Isoleucine;methanol;D-phenylalanine;Pyruvic acid,0.9710237342413497
+10,191,L-valine;hypoxanthine;citrate;L-glutamine;glycine;histidine;L-Lactic acid;methanol;Pyruvic acid;L-tyrosine,0.9596318504807467
+10,192,(R)-3-Hydroxybutyric acid;acetate;L-alanine;creatinine;glycine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;methanol;Dimethyl sulfone,0.9520573105448019
+10,193,(R)-3-Hydroxybutyric acid;L-valine;citrate;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9402651770873285
+10,194,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;creatinine;L-allo-Isoleucine;L-Lactic acid;L-leucine;methanol;L-tyrosine,0.9660709749071714
+10,195,acetate;acetoacetate;L-alanine;L-valine;citrate;histidine;isopropanol;methanol;Dimethyl sulfone;D-phenylalanine,0.9059615727647983
+10,196,acetoacetate;L-valine;citrate;creatinine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;methanol;Pyruvic acid,0.9469319173214317
+10,197,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;citrate;glycine;histidine;L-Lactic acid;lipoproteins;Dimethyl sulfone,0.95181533275895
+10,198,acetoacetate;L-alanine;L-valine;creatinine;glycine;histidine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9272347829019703
+10,199,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine;L-tyrosine,0.9597578784162093
+10,200,acetoacetate;L-valine;creatinine;L-glutamine;glycine;histidine;L-Lactic acid;L-leucine;D-phenylalanine;L-tyrosine,0.9662198148778203
+10,201,(R)-3-Hydroxybutyric acid;L-alanine;citrate;creatinine;L-allo-Isoleucine;isopropanol;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9464634087582051
+10,202,acetate;acetoacetate;L-alanine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9621886043959346
+10,203,acetoacetate;L-valine;hypoxanthine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9690411024081829
+10,204,acetate;L-valine;hypoxanthine;citrate;L-glutamine;glycine;isopropanol;L-leucine;methanol;D-phenylalanine,0.9578789309133028
+10,205,(R)-3-Hydroxybutyric acid;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;methanol;L-tyrosine,0.9573349013733593
+10,206,acetate;L-alanine;L-valine;creatinine;glycine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9175953483092865
+10,207,acetoacetate;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;D-phenylalanine;L-tyrosine,0.9717463732828071
+10,208,(R)-3-Hydroxybutyric acid;hypoxanthine;histidine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9562257073755744
+10,209,acetate;acetoacetate;L-alanine;creatinine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9572133547104004
+10,210,L-alanine;L-valine;hypoxanthine;citrate;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;D-phenylalanine,0.9656860837656702
+10,211,acetate;acetoacetate;L-alanine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;isopropanol;L-leucine;Dimethyl sulfone,0.9564583932158943
+10,212,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins,0.9622698862757133
+10,213,acetoacetate;L-alanine;L-valine;creatinine;histidine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9575572572696238
+10,214,L-alanine;L-valine;hypoxanthine;citrate;creatinine;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9568735680437664
+10,215,acetate;acetoacetate;L-valine;hypoxanthine;citrate;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone;D-phenylalanine,0.9577491493490242
+10,216,acetoacetate;L-alanine;hypoxanthine;creatinine;glycine;histidine;L-allo-Isoleucine;methanol;Dimethyl sulfone;D-phenylalanine,0.9658655393610587
+10,217,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;isopropanol;lipoproteins;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9356464452463252
+10,218,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;creatinine;glycine;isopropanol;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9374853026601851
+10,219,acetate;L-alanine;L-valine;hypoxanthine;creatinine;L-glutamine;glycine;lipoproteins;methanol;Pyruvic acid,0.957974332931434
+10,220,acetoacetate;L-valine;hypoxanthine;citrate;creatinine;glycine;L-allo-Isoleucine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9502401228454118
+10,221,acetate;L-alanine;L-valine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;isopropanol;L-leucine;Pyruvic acid,0.9641321952169313
+10,222,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;citrate;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins,0.9620385782384682
+10,223,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol;Dimethyl sulfone,0.9435536130648526
+10,224,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;citrate;creatinine;histidine;isopropanol;D-phenylalanine;L-tyrosine,0.9649720314286623
+10,225,acetate;L-alanine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Dimethyl sulfone;Pyruvic acid,0.950308953695676
+10,226,acetate;L-alanine;hypoxanthine;creatinine;histidine;L-allo-Isoleucine;isopropanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9691906364453793
+10,227,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;L-allo-Isoleucine;isopropanol;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9491455380409736
+10,228,(R)-3-Hydroxybutyric acid;L-valine;citrate;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;methanol;Dimethyl sulfone;Pyruvic acid,0.9341085595904023
+10,229,acetate;L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;L-leucine;lipoproteins;L-tyrosine,0.9695042154878025
+10,230,L-alanine;hypoxanthine;creatinine;glycine;L-leucine;lipoproteins;methanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.957958593928768
+10,231,(R)-3-Hydroxybutyric acid;hypoxanthine;glycine;isopropanol;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9408251248123689
+10,232,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9703862279723018
+10,233,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;L-glutamine;histidine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone,0.9443762210366438
+10,234,L-valine;creatinine;L-glutamine;histidine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9412749745422958
+10,235,acetate;L-alanine;L-valine;creatinine;histidine;isopropanol;L-leucine;lipoproteins;Pyruvic acid;L-tyrosine,0.9414054903938007
+10,236,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;creatinine;glycine;isopropanol;methanol;Dimethyl sulfone;Pyruvic acid,0.935572055393302
+10,237,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;creatinine;L-glutamine;isopropanol;L-Lactic acid;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9595676496701593
+10,238,citrate;L-glutamine;glycine;histidine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9480573463420159
+10,239,(R)-3-Hydroxybutyric acid;acetate;L-alanine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;L-leucine;D-phenylalanine;L-tyrosine,0.9749354343428639
+10,240,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol,0.9527420170072441
+10,241,acetate;L-valine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;isopropanol;methanol;D-phenylalanine;L-tyrosine,0.9390220326319373
+10,242,L-alanine;citrate;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;methanol;D-phenylalanine;Pyruvic acid,0.9708763181733728
+10,243,(R)-3-Hydroxybutyric acid;citrate;glycine;histidine;L-allo-Isoleucine;isopropanol;lipoproteins;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9616641613242178
+10,244,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;creatinine;glycine;histidine;isopropanol;L-Lactic acid;Dimethyl sulfone;L-tyrosine,0.9408247590607676
+10,245,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;citrate;creatinine;L-glutamine;histidine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9698792047084831
+10,246,L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins,0.9699212039326536
+10,247,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;L-tyrosine,0.9267186131849702
+10,248,acetoacetate;L-alanine;citrate;creatinine;histidine;L-leucine;lipoproteins;methanol;Dimethyl sulfone;Pyruvic acid,0.9451203070700833
+10,249,acetoacetate;L-alanine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine,0.950116104332438
+10,250,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;hypoxanthine;L-glutamine;histidine;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9608701119534208
+10,251,acetoacetate;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;L-tyrosine,0.9224052174441847
+10,252,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;creatinine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9496145439349752
+10,253,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;histidine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9585119074635322
+10,254,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;glycine;histidine;L-leucine;lipoproteins;Pyruvic acid;L-tyrosine,0.9647926600681231
+10,255,L-alanine;L-valine;L-glutamine;histidine;isopropanol;L-Lactic acid;lipoproteins;methanol;Pyruvic acid;L-tyrosine,0.9359185001898438
+10,256,acetate;L-alanine;L-valine;hypoxanthine;citrate;L-glutamine;glycine;histidine;L-Lactic acid;Dimethyl sulfone,0.9601555632566868
+10,257,(R)-3-Hydroxybutyric acid;acetate;L-valine;hypoxanthine;L-glutamine;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9519050411677641
+10,258,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;L-glutamine;glycine;histidine;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9689141398475642
+10,259,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;hypoxanthine;creatinine;glycine;isopropanol;L-Lactic acid;D-phenylalanine;L-tyrosine,0.9563537776344424
+10,260,acetate;acetoacetate;L-alanine;citrate;L-glutamine;L-allo-Isoleucine;isopropanol;methanol;D-phenylalanine;L-tyrosine,0.9648446435017103
+10,261,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;citrate;L-glutamine;glycine;isopropanol;L-Lactic acid;lipoproteins,0.9608175500209386
+10,262,(R)-3-Hydroxybutyric acid;citrate;creatinine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9509237169568003
+10,263,acetate;L-alanine;hypoxanthine;creatinine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins;D-phenylalanine;Pyruvic acid,0.968491000922901
+10,264,acetoacetate;hypoxanthine;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Pyruvic acid,0.9674375923620385
+10,265,acetate;L-alanine;L-valine;hypoxanthine;L-glutamine;isopropanol;L-Lactic acid;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9413418868086572
+10,266,acetate;hypoxanthine;citrate;creatinine;L-glutamine;histidine;isopropanol;lipoproteins;methanol;Dimethyl sulfone,0.9301065422980886
+10,267,(R)-3-Hydroxybutyric acid;creatinine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9591499492602096
+10,268,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;hypoxanthine;citrate;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;L-tyrosine,0.9625390076312185
+10,269,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9474077258031915
+10,270,(R)-3-Hydroxybutyric acid;L-alanine;creatinine;glycine;histidine;L-Lactic acid;L-leucine;lipoproteins;Pyruvic acid;L-tyrosine,0.9681027321434534
+10,271,acetate;L-alanine;creatinine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.928375141377555
+10,272,(R)-3-Hydroxybutyric acid;acetate;citrate;creatinine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;Pyruvic acid;L-tyrosine,0.9580412474585827
+10,273,acetate;citrate;L-glutamine;glycine;histidine;L-allo-Isoleucine;lipoproteins;methanol;D-phenylalanine;L-tyrosine,0.9655163016198604
+10,274,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-glutamine;histidine;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9570079780006098
+10,275,acetoacetate;L-alanine;citrate;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;lipoproteins;D-phenylalanine,0.9648206460126743
+10,276,acetate;L-alanine;L-valine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.8970021635141725
+10,277,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-leucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9505424402397318
+10,278,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;L-glutamine;histidine;L-allo-Isoleucine;lipoproteins;D-phenylalanine;L-tyrosine,0.9573331153220161
+10,279,(R)-3-Hydroxybutyric acid;L-alanine;glycine;isopropanol;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9483370107887065
+10,280,acetate;acetoacetate;hypoxanthine;citrate;creatinine;glycine;histidine;L-allo-Isoleucine;isopropanol;Pyruvic acid,0.9650548632330973
+10,281,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;hypoxanthine;glycine;isopropanol;L-Lactic acid;L-leucine;lipoproteins,0.954117169853168
+10,282,L-valine;creatinine;glycine;histidine;L-Lactic acid;L-leucine;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9551945104424007
+10,283,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;creatinine;glycine;L-allo-Isoleucine;lipoproteins;Dimethyl sulfone;D-phenylalanine,0.963651293143383
+10,284,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9584271750516129
+10,285,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-valine;citrate;isopropanol;lipoproteins;Dimethyl sulfone;D-phenylalanine,0.9244671243920246
+10,286,acetoacetate;L-valine;citrate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;D-phenylalanine,0.9555508814690645
+10,287,acetate;L-alanine;citrate;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9598177972133637
+10,288,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;citrate;creatinine;histidine;L-leucine;lipoproteins;L-tyrosine,0.9660840654272259
+10,289,L-alanine;hypoxanthine;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9631764011142161
+10,290,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;citrate;creatinine;L-glutamine;glycine;L-Lactic acid;Pyruvic acid,0.9704814368593709
+10,291,acetate;acetoacetate;L-alanine;hypoxanthine;L-glutamine;glycine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;Pyruvic acid,0.9596742232354246
+10,292,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-allo-Isoleucine;isopropanol;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9458347577373866
+10,293,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;D-phenylalanine,0.9712528600622913
+10,294,acetate;L-valine;citrate;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;D-phenylalanine;Pyruvic acid,0.9593047497923668
+10,295,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;L-glutamine;glycine;histidine;L-Lactic acid;Pyruvic acid;L-tyrosine,0.9689484643817345
+10,296,acetate;L-alanine;L-valine;hypoxanthine;citrate;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;L-tyrosine,0.9395888829366674
+10,297,acetoacetate;L-alanine;L-valine;glycine;histidine;L-allo-Isoleucine;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9675631524530304
+10,298,acetoacetate;L-alanine;L-valine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;L-tyrosine,0.9708712923643819
+10,299,acetate;acetoacetate;citrate;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone,0.9623299640446576
+10,300,acetate;L-valine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid,0.9505960752218771
+10,301,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;creatinine;L-glutamine;L-allo-Isoleucine;L-leucine;lipoproteins;Dimethyl sulfone,0.9522724972091232
+10,302,acetoacetate;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9602982688738817
+10,303,acetoacetate;L-alanine;L-valine;citrate;histidine;L-allo-Isoleucine;L-Lactic acid;methanol;Pyruvic acid;L-tyrosine,0.9555104974500044
+10,304,(R)-3-Hydroxybutyric acid;acetate;L-valine;citrate;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9359863801222112
+10,305,acetoacetate;L-alanine;hypoxanthine;citrate;L-glutamine;histidine;isopropanol;L-Lactic acid;L-leucine;lipoproteins,0.9606087264809148
+10,306,acetate;L-alanine;L-valine;creatinine;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins,0.9634466930598488
+10,307,acetoacetate;L-alanine;L-valine;creatinine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;Pyruvic acid,0.956528919975958
+10,308,acetoacetate;L-alanine;hypoxanthine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;Pyruvic acid,0.9612990092727209
+10,309,(R)-3-Hydroxybutyric acid;acetoacetate;citrate;creatinine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;L-tyrosine,0.9477299337670231
+10,310,acetoacetate;citrate;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9523282528770792
+10,311,acetate;hypoxanthine;citrate;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;methanol;D-phenylalanine;L-tyrosine,0.970920992756432
+10,312,(R)-3-Hydroxybutyric acid;hypoxanthine;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9663608451310285
+10,313,acetate;L-alanine;creatinine;L-glutamine;glycine;isopropanol;L-Lactic acid;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9392771696325426
+10,314,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;creatinine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9587012074760725
+10,315,acetoacetate;L-alanine;citrate;creatinine;histidine;L-allo-Isoleucine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine,0.962067572877135
+10,316,acetate;L-valine;creatinine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9020546404135669
+10,317,acetoacetate;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9491912558980644
+10,318,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;L-leucine;lipoproteins;Dimethyl sulfone,0.9494413479676324
+10,319,acetate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9265184747411138
+10,320,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;hypoxanthine;citrate;glycine;L-allo-Isoleucine;L-leucine;methanol,0.9697632675964669
+10,321,acetate;acetoacetate;creatinine;glycine;histidine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone;L-tyrosine,0.932982604545189
+10,322,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;creatinine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone,0.9431803342968601
+10,323,acetoacetate;L-valine;hypoxanthine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;D-phenylalanine;L-tyrosine,0.9654059724105
+10,324,acetate;L-alanine;L-valine;creatinine;L-glutamine;isopropanol;L-leucine;lipoproteins;methanol;Pyruvic acid,0.9437139325571736
+10,325,L-alanine;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;Pyruvic acid;L-tyrosine,0.9618027502147135
+10,326,acetoacetate;L-alanine;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol;D-phenylalanine,0.9638612076964792
+10,327,acetoacetate;citrate;L-glutamine;histidine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9567625073015179
+10,328,acetoacetate;L-valine;hypoxanthine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9545319239574641
+10,329,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;creatinine;L-glutamine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9545788120738352
+10,330,(R)-3-Hydroxybutyric acid;citrate;L-glutamine;glycine;histidine;L-allo-Isoleucine;L-leucine;methanol;Pyruvic acid;L-tyrosine,0.9649229614976685
+10,331,(R)-3-Hydroxybutyric acid;acetate;L-valine;citrate;glycine;L-allo-Isoleucine;L-leucine;methanol;D-phenylalanine;L-tyrosine,0.9670531114967009
+10,332,acetate;acetoacetate;L-alanine;hypoxanthine;L-glutamine;histidine;L-Lactic acid;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9716356512486196
+10,333,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;citrate;creatinine;L-allo-Isoleucine;isopropanol;L-leucine;Pyruvic acid;L-tyrosine,0.9671697716624835
+10,334,acetate;acetoacetate;creatinine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;lipoproteins;D-phenylalanine;Pyruvic acid,0.9637108799267924
+10,335,hypoxanthine;citrate;creatinine;L-glutamine;glycine;L-allo-Isoleucine;lipoproteins;methanol;Pyruvic acid;L-tyrosine,0.9604782389036497
+10,336,acetoacetate;L-valine;hypoxanthine;citrate;histidine;isopropanol;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9214086100135972
+10,337,acetoacetate;citrate;L-glutamine;glycine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine;Pyruvic acid,0.9626277918259879
+10,338,acetate;acetoacetate;L-valine;hypoxanthine;citrate;creatinine;L-leucine;methanol;Pyruvic acid;L-tyrosine,0.9614967089913595
+10,339,acetate;acetoacetate;L-valine;hypoxanthine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;methanol;Pyruvic acid,0.9695364018764276
+10,340,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;citrate;creatinine;glycine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9652163060820549
+10,341,acetate;hypoxanthine;citrate;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9625092344853554
+10,342,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;methanol,0.949645567109155
+10,343,(R)-3-Hydroxybutyric acid;acetate;L-valine;hypoxanthine;glycine;histidine;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine,0.9521678371810465
+10,344,L-alanine;hypoxanthine;citrate;L-glutamine;L-allo-Isoleucine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9669723854553581
+10,345,(R)-3-Hydroxybutyric acid;L-valine;creatinine;L-glutamine;glycine;L-allo-Isoleucine;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9654065974419375
+10,346,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;L-glutamine;histidine;L-allo-Isoleucine;L-Lactic acid;methanol;D-phenylalanine;L-tyrosine,0.9610993022930089
+10,347,(R)-3-Hydroxybutyric acid;acetate;L-alanine;hypoxanthine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Dimethyl sulfone,0.9504220548708876
+10,348,L-alanine;L-valine;hypoxanthine;creatinine;L-glutamine;glycine;L-allo-Isoleucine;lipoproteins;Pyruvic acid;L-tyrosine,0.9608565016649229
+10,349,L-valine;creatinine;L-glutamine;glycine;histidine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9647618116679447
+10,350,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;hypoxanthine;creatinine;L-glutamine;glycine;L-Lactic acid;D-phenylalanine,0.9712836343560838
+10,351,L-valine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9190819366589218
+10,352,(R)-3-Hydroxybutyric acid;acetate;L-alanine;hypoxanthine;L-allo-Isoleucine;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9615005296605175
+10,353,(R)-3-Hydroxybutyric acid;acetate;hypoxanthine;citrate;glycine;isopropanol;L-leucine;lipoproteins;methanol;Dimethyl sulfone,0.9355327357423536
+10,354,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;L-glutamine;glycine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;D-phenylalanine;Pyruvic acid,0.9687493981113725
+10,355,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;creatinine;glycine;histidine;isopropanol;L-leucine;lipoproteins;Dimethyl sulfone,0.9349210374381776
+10,356,(R)-3-Hydroxybutyric acid;acetate;L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;glycine;histidine;Pyruvic acid,0.9740525154119353
+10,357,acetate;acetoacetate;L-valine;creatinine;histidine;isopropanol;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9298547672996491
+10,358,(R)-3-Hydroxybutyric acid;L-alanine;creatinine;L-glutamine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9659077738354601
+10,359,acetoacetate;L-alanine;citrate;creatinine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone,0.9621280812083536
+10,360,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;creatinine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9711126497918795
+10,361,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;hypoxanthine;creatinine;histidine;L-allo-Isoleucine;L-leucine;L-tyrosine,0.969328077616521
+10,362,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;L-glutamine;glycine;L-allo-Isoleucine;lipoproteins;D-phenylalanine;Pyruvic acid,0.9679558224457888
+10,363,L-alanine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9593109147993176
+10,364,acetate;L-alanine;L-valine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;Pyruvic acid,0.9736870727770107
+10,365,acetate;acetoacetate;L-valine;hypoxanthine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;Dimethyl sulfone,0.9530297783919286
+10,366,acetate;acetoacetate;citrate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;Pyruvic acid;L-tyrosine,0.9623764711176936
+10,367,acetate;L-alanine;citrate;glycine;L-allo-Isoleucine;L-leucine;lipoproteins;methanol;Pyruvic acid;L-tyrosine,0.9598409538664876
+10,368,acetate;L-alanine;citrate;creatinine;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;methanol,0.9653384231080102
+10,369,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;L-glutamine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol,0.9544272883785507
+10,370,acetate;L-alanine;hypoxanthine;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;methanol;D-phenylalanine,0.965065561082309
+10,371,acetate;L-alanine;creatinine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9269246687274204
+10,372,acetoacetate;L-alanine;L-valine;hypoxanthine;citrate;glycine;histidine;isopropanol;L-leucine;lipoproteins,0.9556430073363112
+10,373,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;isopropanol;L-leucine;methanol;D-phenylalanine,0.9660349241962405
+10,374,acetate;acetoacetate;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;lipoproteins;methanol;Pyruvic acid,0.9422439117478878
+10,375,hypoxanthine;creatinine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9506360911296349
+10,376,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;hypoxanthine;citrate;glycine;isopropanol;L-leucine;methanol;Pyruvic acid,0.9570667067169577
+10,377,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;citrate;creatinine;isopropanol;L-leucine;lipoproteins;L-tyrosine,0.960837079878004
+10,378,acetoacetate;citrate;L-glutamine;glycine;histidine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9473155739883778
+10,379,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;Dimethyl sulfone;L-tyrosine,0.888142408031163
+10,380,acetoacetate;L-valine;citrate;creatinine;histidine;isopropanol;lipoproteins;methanol;D-phenylalanine;L-tyrosine,0.9298736980448858
+10,381,hypoxanthine;citrate;creatinine;histidine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9477370575579909
+10,382,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;hypoxanthine;citrate;glycine;L-Lactic acid;methanol;L-tyrosine,0.9537422731879537
+10,383,acetoacetate;L-valine;hypoxanthine;L-glutamine;glycine;L-allo-Isoleucine;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9388336871109597
+10,384,acetate;acetoacetate;L-alanine;L-valine;hypoxanthine;histidine;lipoproteins;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9539909036018644
+10,385,(R)-3-Hydroxybutyric acid;acetate;L-glutamine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9330682776714246
+10,386,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;citrate;histidine;lipoproteins;methanol;D-phenylalanine;L-tyrosine,0.958595900866953
+10,387,(R)-3-Hydroxybutyric acid;acetate;citrate;L-glutamine;L-allo-Isoleucine;L-leucine;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9560264028245145
+10,388,acetate;acetoacetate;L-alanine;L-valine;hypoxanthine;citrate;glycine;L-Lactic acid;L-leucine;Pyruvic acid,0.9714246022909974
+10,389,acetoacetate;L-alanine;L-valine;hypoxanthine;citrate;L-glutamine;isopropanol;L-Lactic acid;lipoproteins;Pyruvic acid,0.9601689865767675
+10,390,hypoxanthine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9291498619483758
+10,391,acetate;acetoacetate;L-alanine;L-valine;L-allo-Isoleucine;L-Lactic acid;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine,0.9381729480367416
+10,392,acetate;acetoacetate;L-alanine;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;lipoproteins;Dimethyl sulfone,0.9502060580461074
+10,393,acetate;L-valine;hypoxanthine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid,0.9511032196531187
+10,394,(R)-3-Hydroxybutyric acid;creatinine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9562041964322952
+10,395,(R)-3-Hydroxybutyric acid;L-valine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;methanol;D-phenylalanine;Pyruvic acid,0.9400352484772202
+10,396,acetoacetate;L-alanine;L-valine;citrate;creatinine;glycine;histidine;isopropanol;L-Lactic acid;Dimethyl sulfone,0.9374823456245016
+10,397,acetoacetate;L-alanine;L-valine;creatinine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;D-phenylalanine;L-tyrosine,0.9527657926793457
+10,398,(R)-3-Hydroxybutyric acid;acetoacetate;hypoxanthine;creatinine;L-glutamine;L-leucine;methanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.966640293529519
+10,399,L-alanine;L-valine;hypoxanthine;citrate;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;D-phenylalanine;Pyruvic acid,0.9630242627111474
+10,400,(R)-3-Hydroxybutyric acid;hypoxanthine;creatinine;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;Pyruvic acid,0.962561755955179
+10,401,acetate;acetoacetate;L-valine;citrate;glycine;L-allo-Isoleucine;isopropanol;lipoproteins;D-phenylalanine;L-tyrosine,0.9345455776658379
+10,402,acetoacetate;L-alanine;L-valine;hypoxanthine;creatinine;L-glutamine;histidine;L-leucine;methanol;Pyruvic acid,0.9663792868523764
+10,403,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;creatinine;glycine;L-allo-Isoleucine;L-leucine;lipoproteins;methanol;Dimethyl sulfone,0.9525733628371043
+10,404,L-valine;hypoxanthine;citrate;glycine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol;Pyruvic acid,0.9506880173697296
+10,405,acetate;hypoxanthine;citrate;creatinine;L-glutamine;glycine;isopropanol;lipoproteins;D-phenylalanine;L-tyrosine,0.9611247942590895
+10,406,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;lipoproteins;methanol;L-tyrosine,0.9456813527261023
+10,407,(R)-3-Hydroxybutyric acid;L-alanine;citrate;creatinine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol;L-tyrosine,0.9632460227554352
+10,408,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol,0.9620234114671353
+10,409,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;citrate;glycine;isopropanol;L-Lactic acid;methanol;L-tyrosine,0.9459123170606207
+10,410,acetoacetate;L-valine;creatinine;glycine;histidine;L-allo-Isoleucine;isopropanol;methanol;Dimethyl sulfone;D-phenylalanine,0.9097953855116088
+10,411,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;creatinine;glycine;histidine;isopropanol;L-Lactic acid;L-leucine,0.9681692194550843
+10,412,acetate;L-alanine;citrate;L-glutamine;glycine;isopropanol;L-Lactic acid;methanol;D-phenylalanine;L-tyrosine,0.9671577035290272
+10,413,(R)-3-Hydroxybutyric acid;acetate;citrate;creatinine;L-glutamine;glycine;histidine;L-Lactic acid;D-phenylalanine;L-tyrosine,0.974454563447559
+10,414,acetate;L-valine;creatinine;L-glutamine;histidine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone;Pyruvic acid,0.909511355010321
+10,415,acetoacetate;hypoxanthine;L-glutamine;L-allo-Isoleucine;isopropanol;lipoproteins;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9418507256009725
+10,416,acetate;acetoacetate;L-alanine;citrate;creatinine;histidine;L-Lactic acid;methanol;Dimethyl sulfone;Pyruvic acid,0.953619052257271
+10,417,(R)-3-Hydroxybutyric acid;acetate;citrate;L-glutamine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9458938967892111
+10,418,citrate;creatinine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;Pyruvic acid,0.9646124252470849
+10,419,L-alanine;hypoxanthine;citrate;creatinine;L-glutamine;glycine;isopropanol;lipoproteins;methanol;L-tyrosine,0.9580290425646822
+10,420,(R)-3-Hydroxybutyric acid;L-alanine;citrate;L-glutamine;glycine;histidine;L-allo-Isoleucine;methanol;Dimethyl sulfone;L-tyrosine,0.9624446177655721
+10,421,acetate;L-alanine;L-valine;citrate;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;D-phenylalanine;L-tyrosine,0.9697827804525772
+10,422,(R)-3-Hydroxybutyric acid;acetate;L-valine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;methanol;D-phenylalanine;Pyruvic acid,0.9690590268992678
+10,423,L-valine;creatinine;L-glutamine;glycine;isopropanol;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9189618425586018
+10,424,acetate;acetoacetate;L-alanine;hypoxanthine;citrate;creatinine;L-allo-Isoleucine;lipoproteins;D-phenylalanine;Pyruvic acid,0.9697572134111527
+10,425,acetate;acetoacetate;L-alanine;L-allo-Isoleucine;isopropanol;L-leucine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine,0.9319839568622547
+10,426,(R)-3-Hydroxybutyric acid;L-valine;citrate;histidine;isopropanol;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9398554776753534
+10,427,acetate;L-valine;hypoxanthine;citrate;glycine;isopropanol;L-Lactic acid;lipoproteins;methanol;L-tyrosine,0.9433225794562914
+10,428,acetate;acetoacetate;L-valine;citrate;L-glutamine;glycine;L-allo-Isoleucine;methanol;Dimethyl sulfone;Pyruvic acid,0.9488272959991357
+10,429,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;L-glutamine;glycine;histidine;L-allo-Isoleucine;lipoproteins;Dimethyl sulfone,0.9566703115051018
+10,430,acetate;L-alanine;creatinine;L-glutamine;glycine;histidine;isopropanol;L-leucine;Dimethyl sulfone;Pyruvic acid,0.9340753777832879
+10,431,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;hypoxanthine;citrate;L-glutamine;glycine;histidine;L-leucine;L-tyrosine,0.9656271021223517
+10,432,acetate;L-alanine;L-valine;hypoxanthine;citrate;glycine;histidine;L-allo-Isoleucine;Pyruvic acid;L-tyrosine,0.9665413910473946
+10,433,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;citrate;creatinine;L-glutamine;isopropanol;L-Lactic acid;L-leucine;methanol,0.9532460589579095
+10,434,acetate;acetoacetate;L-alanine;hypoxanthine;citrate;creatinine;L-Lactic acid;lipoproteins;methanol;Dimethyl sulfone,0.9518524871526896
+10,435,acetate;L-alanine;hypoxanthine;glycine;histidine;L-leucine;methanol;Dimethyl sulfone;Pyruvic acid;L-tyrosine,0.9483256179574872
+10,436,acetate;L-alanine;hypoxanthine;citrate;glycine;histidine;L-allo-Isoleucine;L-leucine;lipoproteins;Dimethyl sulfone,0.9576190769712782
+10,437,L-alanine;hypoxanthine;creatinine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;methanol;D-phenylalanine,0.9638332159079023
+10,438,L-alanine;L-valine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;D-phenylalanine;L-tyrosine,0.9553094648361473
+10,439,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;hypoxanthine;creatinine;glycine;L-allo-Isoleucine;L-leucine;lipoproteins;D-phenylalanine,0.9699051114931077
+10,440,L-valine;citrate;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;methanol;L-tyrosine,0.9512644982363018
+10,441,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;creatinine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9575809029086417
+10,442,L-valine;hypoxanthine;citrate;creatinine;glycine;isopropanol;L-Lactic acid;lipoproteins;Pyruvic acid;L-tyrosine,0.9495197479659189
+10,443,acetate;L-alanine;hypoxanthine;creatinine;L-glutamine;glycine;L-allo-Isoleucine;isopropanol;L-leucine;Pyruvic acid,0.9662589603111104
+10,444,(R)-3-Hydroxybutyric acid;acetate;citrate;creatinine;L-glutamine;histidine;L-allo-Isoleucine;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9591918224564767
+10,445,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;creatinine;histidine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.955157120372431
+10,446,(R)-3-Hydroxybutyric acid;L-alanine;L-valine;hypoxanthine;creatinine;L-allo-Isoleucine;methanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9619255505773121
+10,447,acetate;L-glutamine;glycine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9159584781251194
+10,448,L-valine;hypoxanthine;citrate;creatinine;L-glutamine;L-allo-Isoleucine;L-leucine;lipoproteins;Dimethyl sulfone;Pyruvic acid,0.9646802000725665
+10,449,acetate;L-alanine;L-valine;citrate;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;methanol;Pyruvic acid,0.9558061076927389
+10,450,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;histidine;isopropanol;L-leucine;D-phenylalanine;Pyruvic acid,0.9637419479190893
+10,451,acetate;acetoacetate;citrate;creatinine;glycine;L-allo-Isoleucine;lipoproteins;methanol;Dimethyl sulfone;L-tyrosine,0.9521491864575993
+10,452,L-valine;hypoxanthine;citrate;glycine;histidine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine,0.9465369662585892
+10,453,acetoacetate;L-alanine;L-valine;citrate;creatinine;glycine;histidine;L-allo-Isoleucine;lipoproteins;Pyruvic acid,0.9654122386950695
+10,454,acetoacetate;hypoxanthine;creatinine;L-glutamine;glycine;L-Lactic acid;L-leucine;lipoproteins;methanol;L-tyrosine,0.9583555624285206
+10,455,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;methanol;D-phenylalanine,0.9645639536035958
+10,456,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-valine;citrate;L-glutamine;isopropanol;L-Lactic acid;Dimethyl sulfone;Pyruvic acid,0.9316448740564313
+10,457,acetate;L-alanine;L-valine;creatinine;isopropanol;L-Lactic acid;L-leucine;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9371623026539779
+10,458,acetate;acetoacetate;L-glutamine;glycine;histidine;L-allo-Isoleucine;isopropanol;methanol;Pyruvic acid;L-tyrosine,0.9512122201258039
+10,459,acetate;acetoacetate;L-alanine;citrate;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9573019462090115
+10,460,acetate;L-alanine;L-valine;hypoxanthine;citrate;histidine;isopropanol;L-leucine;D-phenylalanine;L-tyrosine,0.9542495641762896
+10,461,acetate;acetoacetate;hypoxanthine;creatinine;L-glutamine;glycine;isopropanol;L-Lactic acid;methanol;D-phenylalanine,0.9684545873433905
+10,462,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins,0.9639806595231852
+10,463,(R)-3-Hydroxybutyric acid;acetate;L-alanine;L-valine;hypoxanthine;citrate;creatinine;glycine;histidine;Pyruvic acid,0.9724945828466864
+10,464,(R)-3-Hydroxybutyric acid;hypoxanthine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9650663125466455
+10,465,acetoacetate;L-alanine;citrate;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;methanol;Pyruvic acid,0.9504169024637715
+10,466,acetoacetate;L-alanine;L-valine;hypoxanthine;glycine;histidine;L-allo-Isoleucine;lipoproteins;Dimethyl sulfone;L-tyrosine,0.9423295565080345
+10,467,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-valine;glycine;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine,0.968864933718787
+10,468,acetoacetate;L-alanine;L-valine;citrate;creatinine;L-glutamine;histidine;L-allo-Isoleucine;isopropanol;L-tyrosine,0.9619601182521648
+10,469,acetate;L-alanine;citrate;glycine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;D-phenylalanine;Pyruvic acid,0.9585762645628777
+10,470,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;L-glutamine;histidine;isopropanol;L-Lactic acid;lipoproteins;methanol;Pyruvic acid,0.9523537493040571
+10,471,acetate;L-alanine;L-valine;L-allo-Isoleucine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9268878891352323
+10,472,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;creatinine;glycine;histidine;L-leucine;lipoproteins;Pyruvic acid,0.9702608199109202
+10,473,acetate;L-valine;hypoxanthine;L-glutamine;glycine;isopropanol;L-leucine;methanol;D-phenylalanine;L-tyrosine,0.946377550404025
+10,474,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;creatinine;L-allo-Isoleucine;methanol;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9599148620567329
+10,475,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;hypoxanthine;L-glutamine;glycine;isopropanol;lipoproteins;D-phenylalanine,0.96173453300002
+10,476,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;hypoxanthine;citrate;histidine;L-allo-Isoleucine;L-leucine;lipoproteins;Pyruvic acid,0.9671655645795185
+10,477,(R)-3-Hydroxybutyric acid;acetate;L-valine;glycine;histidine;isopropanol;L-leucine;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9093232012943839
+10,478,(R)-3-Hydroxybutyric acid;L-alanine;hypoxanthine;histidine;L-allo-Isoleucine;L-Lactic acid;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9618068280055467
+10,479,(R)-3-Hydroxybutyric acid;L-valine;hypoxanthine;citrate;isopropanol;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.8976229187193919
+10,480,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;glycine;histidine;L-allo-Isoleucine;isopropanol;L-leucine;methanol;Pyruvic acid,0.9522049499488989
+10,481,acetoacetate;L-alanine;histidine;L-allo-Isoleucine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;Pyruvic acid;L-tyrosine,0.9592678865066481
+10,482,acetate;L-valine;hypoxanthine;citrate;creatinine;glycine;L-allo-Isoleucine;L-Lactic acid;methanol;Pyruvic acid,0.9697471855151361
+10,483,acetate;acetoacetate;L-alanine;L-valine;hypoxanthine;glycine;L-allo-Isoleucine;L-leucine;D-phenylalanine;Pyruvic acid,0.9725066117862755
+10,484,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;creatinine;glycine;lipoproteins;methanol;Dimethyl sulfone;D-phenylalanine;Pyruvic acid,0.9400563478614633
+10,485,acetoacetate;L-alanine;creatinine;L-glutamine;glycine;isopropanol;L-Lactic acid;lipoproteins;methanol;Pyruvic acid,0.948141524357583
+10,486,acetoacetate;hypoxanthine;citrate;histidine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;D-phenylalanine;L-tyrosine,0.968086662857379
+10,487,L-alanine;L-valine;hypoxanthine;creatinine;glycine;L-allo-Isoleucine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone,0.9648827889012732
+10,488,acetoacetate;L-valine;creatinine;glycine;L-allo-Isoleucine;isopropanol;L-Lactic acid;lipoproteins;Pyruvic acid;L-tyrosine,0.9473444619415166
+10,489,acetate;L-alanine;L-glutamine;L-allo-Isoleucine;isopropanol;L-Lactic acid;Dimethyl sulfone;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9505292270369573
+10,490,acetate;citrate;creatinine;glycine;histidine;isopropanol;lipoproteins;methanol;Dimethyl sulfone;Pyruvic acid,0.9106320013295324
+10,491,(R)-3-Hydroxybutyric acid;acetate;acetoacetate;L-alanine;L-valine;citrate;creatinine;histidine;isopropanol;Dimethyl sulfone,0.9449088377741132
+10,492,acetate;L-valine;hypoxanthine;citrate;creatinine;glycine;isopropanol;lipoproteins;D-phenylalanine;Pyruvic acid,0.9517506097174722
+10,493,(R)-3-Hydroxybutyric acid;acetate;L-alanine;citrate;glycine;histidine;L-Lactic acid;L-leucine;methanol;Dimethyl sulfone,0.9607895315373998
+10,494,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;citrate;creatinine;L-glutamine;histidine;isopropanol;Dimethyl sulfone,0.9501230929261333
+10,495,(R)-3-Hydroxybutyric acid;acetoacetate;L-valine;hypoxanthine;glycine;L-leucine;lipoproteins;Dimethyl sulfone;D-phenylalanine;L-tyrosine,0.9553036105654911
+10,496,acetate;acetoacetate;hypoxanthine;L-glutamine;glycine;L-Lactic acid;L-leucine;D-phenylalanine;Pyruvic acid;L-tyrosine,0.9696792340974412
+10,497,acetoacetate;citrate;creatinine;L-glutamine;L-allo-Isoleucine;L-Lactic acid;L-leucine;lipoproteins;methanol;D-phenylalanine,0.9666155213532265
+10,498,(R)-3-Hydroxybutyric acid;acetoacetate;L-alanine;L-valine;hypoxanthine;creatinine;glycine;L-allo-Isoleucine;lipoproteins;methanol,0.9557855810033167
+10,499,(R)-3-Hydroxybutyric acid;L-alanine;L-glutamine;glycine;isopropanol;L-Lactic acid;L-leucine;lipoproteins;methanol;D-phenylalanine,0.9524885001406775

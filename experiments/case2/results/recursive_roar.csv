@@ -1,0 +1,13 @@
+k,removed_at_step,pr_auc,sd_folds,top_after,top3_after
+0,,0.972812615454236,0.019951509336375472,Dimethyl sulfone,
+1,Dimethyl sulfone,0.965467621962956,0.026656907781907976,isopropanol,isopropanol;L-valine;methanol
+2,isopropanol,0.965286826618447,0.023383545948378257,L-valine,L-valine;methanol;glycine
+3,L-valine,0.9537590839851533,0.02559811668842258,glycine,glycine;methanol;Pyruvic acid
+4,glycine,0.9445626870702953,0.028535856405636394,methanol,methanol;L-tyrosine;acetate
+5,methanol,0.9275541294521217,0.03523615727359764,L-tyrosine,L-tyrosine;acetate;Pyruvic acid
+6,L-tyrosine,0.9097556596525389,0.042372302432041785,D-phenylalanine,D-phenylalanine;lipoproteins;Pyruvic acid
+7,D-phenylalanine,0.8848954025323813,0.04238806958483674,lipoproteins,lipoproteins;L-allo-Isoleucine;Pyruvic acid
+8,lipoproteins,0.8619951148149384,0.04215533909424125,Pyruvic acid,Pyruvic acid;L-allo-Isoleucine;histidine
+9,Pyruvic acid,0.8484124767934985,0.05085994373242863,L-allo-Isoleucine,L-allo-Isoleucine;histidine;acetate
+10,L-allo-Isoleucine,0.8252008809498994,0.04990705522666403,L-leucine,L-leucine;histidine;acetoacetate
+11,L-leucine,0.8015920336537846,0.05394687256898745,acetoacetate,acetoacetate;L-glutamine;acetate

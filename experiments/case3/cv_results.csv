@@ -1,0 +1,13 @@
+model,grouping,n_groups,seeds,pr_auc_foldmean,pr_auc_foldsd,roc_auc_foldmean,pr_auc_pooled_oof,roc_auc_pooled_oof,pr_auc_seed_range
+NMR XGB monotone (notebook),heuristic,26,1,0.976,0.022,0.98,0.907,0.936,
+NMR XGB monotone,heuristic,26,20,0.911,0.077,0.929,0.896,0.925,0.845-0.975
+NMR XGB monotone,constrained,30,20,0.906,0.093,0.932,0.894,0.93,0.853-0.948
+NMR XGB unconstrained,constrained,30,20,0.902,0.098,0.927,0.889,0.926,0.846-0.954
+"NMR logistic (std, C=1)",constrained,30,20,0.934,0.059,0.953,0.932,0.952,0.901-0.958
+NMR XGB monotone,"none (sample-level, leaky)",132,20,0.969,0.03,0.979,0.963,0.977,0.944-0.986
+batch prefix only (logistic),heuristic,26,20,1.0,0.0,1.0,1.0,1.0,1.000-1.000
+batch prefix only (logistic),constrained,30,20,1.0,0.0,1.0,1.0,1.0,1.000-1.000
+sex only (logistic),constrained,30,20,0.504,0.164,0.604,0.375,0.514,0.455-0.590
+nmrML phc1 only (logistic),constrained,30,20,0.394,0.066,0.403,0.328,0.393,0.348-0.442
+nmrML phc0 + phc1 + ppm_start + pw + ns (logistic),constrained,30,20,0.606,0.13,0.74,0.522,0.72,0.568-0.645
+sample-number only (logistic),constrained,30,20,0.772,0.235,0.814,0.547,0.781,0.682-0.868

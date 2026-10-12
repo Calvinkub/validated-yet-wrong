@@ -1,0 +1,120 @@
+xgboost 3.2.0, sklearn 1.9.0, numpy 2.4.6
+samples=132 features=220 control=84 T2DM=48
+
+=== 1a. label x prefix (samples) ===
+col_0      Control  T2DM
+row_0                   
+ADG10003u        0    48
+ADG19007u       84     0
+
+=== 1b. label x sex (samples) ===
+col_0   Control  T2DM
+row_0                
+Female       28    26
+Male         56    22
+col_0
+Control    0.667
+T2DM       0.458
+Name: male fraction, dtype: float64
+
+=== 1c. label x prefix x sex (samples) ===
+col_0              Female  Male  All
+row_0   row_1                       
+Control ADG19007u      28    56   84
+T2DM    ADG10003u      26    22   48
+All                    54    78  132
+
+=== 1d. every s_/a_ metadata column vs label ===
+    file                                column  n_unique                               kind cramers_v_vs_label
+s_MTBLS1                       Sample Name [0]       132 unique per sample (ID / file path)                   
+s_MTBLS1             Factor Value[Gender] [15]         2                             varies              0.204
+s_MTBLS1 Factor Value[Metabolic syndrome] [18]         2                             varies                1.0
+a_MTBLS1                       Sample Name [0]       132 unique per sample (ID / file path)                   
+a_MTBLS1                      Extract Name [3]       132 unique per sample (ID / file path)                   
+a_MTBLS1                   NMR Assay Name [35]       132 unique per sample (ID / file path)                   
+a_MTBLS1   Free Induction Decay Data File [36]       132 unique per sample (ID / file path)                   
+a_MTBLS1       Derived Spectral Data File [39]       132 unique per sample (ID / file path)                   
+constant columns: 56 of 64
+s_ 'Source Name' values: {'ADG10003u': 132}  (ISA source = subject slot; here one value for ALL 132 samples incl. controls -> no subject info)
+constant values in assay sheet (instrument etc.):
+   Parameter Value[Instrument]: ['Bruker AVANCE DRX 700 MHz spectrometer']
+   Parameter Value[NMR Probe]: ['5 mm PATXI 1H-13C/15N XYZ-GRD']
+   Parameter Value[Number of transients]: ['128']
+   Parameter Value[Pulse sequence name]: ['1D NOESY with presaturation (noesypr1d)']
+   Parameter Value[Sample pH]: ['7.4']
+   Parameter Value[Temperature]: ['300']
+   Acquisition Parameter Data File: ['FILES/acqus.txt']
+   Normalization Name: ['ADG_normalized_data.xlsx']
+   Data Transformation Name: ['ADG_transformed_data.xlsx']
+
+=== 1e. nmrML header parameters by label ===
+   ns:
+label  Control  T2DM
+      ns                  
+      64           0     1
+      128         84    47
+   pulse_width_us: single-variable ROC-AUC vs label = 0.769
+                min  median   max
+      label                      
+      Control  6.89   7.415  8.49
+      T2DM     7.01   7.955  8.54
+   o1_MHz: constant = 699.873291
+   sweep_Hz: constant = 14005.602241
+   d1_s: constant = 3.0
+   temp_K: constant = 300.0
+   phc0_deg: single-variable ROC-AUC vs label = 0.593
+                   min   median       max
+      label                              
+      Control -44.3657 -33.5104  327.6501
+      T2DM    -45.7206 -35.1302  230.5297
+   phc1_deg: single-variable ROC-AUC vs label = 0.514
+                   min   median     max
+      label                            
+      Control -27.3485 -14.6227 -5.7067
+      T2DM    -22.4590 -14.5931 -1.8668
+   ppm_start: single-variable ROC-AUC vs label = 0.668
+                   min   median      max
+      label                             
+      Control  14.7616  14.7704  14.7761
+      T2DM     14.7626  14.7689  14.7753
+   probe: constant = 5 mm PATXI 1H-13C/15N XYZ-GRD Z561501/0002
+   operator: constant = mse
+
+=== 4. subject reconstruction ===
+   notebook heuristic (gap<=3): subjects=26 (control=12, T2DM=14); T2DM group sizes=[8, 5, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2]; groups with >3 T2DM samples=3; groups mixing sexes=1
+   constrained (gap<=3 + same sex + <=3/patient): subjects=30 (control=12, T2DM=18); T2DM group sizes=[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 1]; groups with >3 T2DM samples=0; groups mixing sexes=0
+   controls: numbering 10k+t, blocks=12, sizes=[7], t-values=[np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7)]
+   control subjects by sex: {'Male': 8, 'Female': 4}  (protocol: 8 M / 4 F)
+   T2DM constrained subjects by sex: {'Male': 9, 'Female': 9}  (protocol: 30 patients, 17 M / 13 F, 50 samples; deposited 48)
+   T2DM sample-level male fraction = 0.458; protocol subject-level = 0.567
+   heuristic groups that provably merge distinct patients (mixed sex or >3 samples):
+      ['007', '008', '009', '010']  sexes=MMMM
+      ['112', '113', '114', '115', '116', '117', '118', '120']  sexes=MMMMMMMM
+      ['151', '152', '153', '155', '156']  sexes=FFFMM
+
+chance PR-AUC (prevalence) = 0.364
+
+=== 3. NMR model reproduction (notebook config: XGB + literature monotone, SGKF seed 42) ===
+   NMR XGB monotone (notebook)                    [heuristic, 26 grp, 1 seed] PR-AUC 0.976 +/- 0.022 | ROC-AUC 0.980 | pooled-OOF PR 0.907
+   NMR XGB monotone                               [heuristic, 26 grp, 20 seed] PR-AUC 0.911 +/- 0.077 | ROC-AUC 0.929 | pooled-OOF PR 0.896 | seed range 0.845-0.975
+   NMR XGB monotone                               [constrained, 30 grp, 20 seed] PR-AUC 0.906 +/- 0.093 | ROC-AUC 0.932 | pooled-OOF PR 0.894 | seed range 0.853-0.948
+   NMR XGB unconstrained                          [constrained, 30 grp, 20 seed] PR-AUC 0.902 +/- 0.098 | ROC-AUC 0.927 | pooled-OOF PR 0.889 | seed range 0.846-0.954
+   NMR logistic (std, C=1)                        [constrained, 30 grp, 20 seed] PR-AUC 0.934 +/- 0.059 | ROC-AUC 0.953 | pooled-OOF PR 0.932 | seed range 0.901-0.958
+   NMR XGB monotone                               [none (sample-level, leaky), 132 grp, 20 seed] PR-AUC 0.969 +/- 0.030 | ROC-AUC 0.979 | pooled-OOF PR 0.963 | seed range 0.944-0.986
+
+=== 2. metadata-only classifiers (same subject-grouped CV) ===
+   batch prefix only (logistic)                   [heuristic, 26 grp, 20 seed] PR-AUC 1.000 +/- 0.000 | ROC-AUC 1.000 | pooled-OOF PR 1.000 | seed range 1.000-1.000
+   batch prefix only (logistic)                   [constrained, 30 grp, 20 seed] PR-AUC 1.000 +/- 0.000 | ROC-AUC 1.000 | pooled-OOF PR 1.000 | seed range 1.000-1.000
+   sex only (logistic)                            [constrained, 30 grp, 20 seed] PR-AUC 0.504 +/- 0.164 | ROC-AUC 0.604 | pooled-OOF PR 0.375 | seed range 0.455-0.590
+   nmrML phc1 only (logistic)                     [constrained, 30 grp, 20 seed] PR-AUC 0.394 +/- 0.066 | ROC-AUC 0.403 | pooled-OOF PR 0.328 | seed range 0.348-0.442
+   nmrML phc0 + phc1 + ppm_start + pw + ns (logistic) [constrained, 30 grp, 20 seed] PR-AUC 0.606 +/- 0.130 | ROC-AUC 0.740 | pooled-OOF PR 0.522 | seed range 0.568-0.645
+   sample-number only (logistic)                  [constrained, 30 grp, 20 seed] PR-AUC 0.772 +/- 0.235 | ROC-AUC 0.814 | pooled-OOF PR 0.547 | seed range 0.682-0.868
+
+=== 3b. within-batch analysis ===
+   prefix ADG10003u: labels present = ['T2DM'] -> within-batch T2DM-vs-control classification is IMPOSSIBLE (single class)
+   prefix ADG19007u: labels present = ['Control'] -> within-batch T2DM-vs-control classification is IMPOSSIBLE (single class)
+   within-sex strata (sex is NOT confounded, but batch==label inside each stratum too):
+      Male: {'Control': {'ADG10003u': 0, 'ADG19007u': 56}, 'T2DM': {'ADG10003u': 22, 'ADG19007u': 0}}
+      Female: {'Control': {'ADG10003u': 0, 'ADG19007u': 28}, 'T2DM': {'ADG10003u': 26, 'ADG19007u': 0}}
+
+wrote crosstab_counts.csv, acq_params.csv, subject_groupings.csv, cv_results.csv

@@ -1,0 +1,36 @@
+{
+  "task": "forecast residualized 12-month metabolic response from preop NMR",
+  "outcome_definition": "legacy: >=9/11 markers move in the literature direction (SUPERSEDED)",
+  "n_subjects": 71,
+  "n_responders": 31,
+  "prevalence_baseline": 0.43661971830985913,
+  "features_used": 21,
+  "artifact_features_dropped": [],
+  "artifact_drop_reason": "exogenous compounds; isopropanol is a surgical skin-prep contaminant (Bridge_ai_summit_nmr_2026, Experiment A caveats)",
+  "metric": "PR-AUC (average precision)",
+  "evaluation": "20 repeats x 5-fold stratified CV, held-out only",
+  "model_pr_auc_mean": 0.6834685836650122,
+  "model_pr_auc_std_across_repeats": 0.0429441214164756,
+  "observed_lift_over_prevalence": 1.5653635303295441,
+  "CONTROL_trivial_scorer_pr_auc": 0.7088713931571075,
+  "CONTROL_model_minus_trivial": -0.02540280949209528,
+  "CONTROL_model_minus_trivial_ci95": [
+    -0.04698903551805327,
+    -0.00614912050581695
+  ],
+  "CONTROL_model_beats_trivial": false,
+  "CONTROL_pairing_destroyed_null_lift_median": 2.0393045960069744,
+  "CONTROL_pairing_destroyed_null_lift_p95": 2.5106326117394593,
+  "CONTROL_observed_lift_clears_null": false,
+  "CONTROL_permutation_p_value": 0.001999000499750125,
+  "solver_convergence_rate": 1.0,
+  "monotone_positive": 8,
+  "monotone_negative": 3,
+  "unconstrained": 10,
+  "binding_constraints": [
+    "histidine",
+    "lipoproteins"
+  ],
+  "max_abs_standardized_coefficient": 0.11098032954105484,
+  "VERDICT": "No evidence of forecasting skill beyond regression to the mean."
+}

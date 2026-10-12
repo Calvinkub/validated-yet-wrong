@@ -1,0 +1,422 @@
+{
+  "baseline": {
+    "baseline_grouped": {
+      "mean": 0.972812615454236,
+      "sd_folds": 0.019951509336375472
+    },
+    "baseline_ungrouped_stratified": {
+      "mean": 0.9719330731483137,
+      "sd_folds": 0.024088351601469504
+    },
+    "runtime_s": 31.6
+  },
+  "curve": [
+    {
+      "k": 1,
+      "n_null": 21,
+      "null_mean": 0.971713304778478,
+      "null_p2_5": 0.9665515287581163,
+      "null_p5": 0.9676354355532768,
+      "null_p50": 0.9724690637683274,
+      "null_p97_5": 0.9738944192507344,
+      "null_min": 0.965467621962956,
+      "recursive_removed": "Dimethyl sulfone",
+      "recursive_pr_auc": 0.965467621962956,
+      "recursive_pct": 4.761904761904762,
+      "fixed_pr_auc": 0.965467621962956,
+      "fixed_pct": 4.761904761904762
+    },
+    {
+      "k": 2,
+      "n_null": 210,
+      "null_mean": 0.9706406648188833,
+      "null_p2_5": 0.9634008870498679,
+      "null_p5": 0.9647014490458071,
+      "null_p50": 0.971309261186043,
+      "null_p97_5": 0.9741908099524492,
+      "null_min": 0.9608257522817892,
+      "recursive_removed": "isopropanol",
+      "recursive_pr_auc": 0.965286826618447,
+      "recursive_pct": 6.190476190476191,
+      "fixed_pr_auc": 0.965286826618447,
+      "fixed_pct": 6.190476190476191
+    },
+    {
+      "k": 3,
+      "n_null": 500,
+      "null_mean": 0.96955630382902,
+      "null_p2_5": 0.9612288044788203,
+      "null_p5": 0.9630666760753283,
+      "null_p50": 0.9704328103995237,
+      "null_p97_5": 0.974284184363573,
+      "null_min": 0.9530471556344482,
+      "recursive_removed": "L-valine",
+      "recursive_pr_auc": 0.9537590839851532,
+      "recursive_pct": 0.2,
+      "fixed_pr_auc": 0.953817687477112,
+      "fixed_pct": 0.2
+    },
+    {
+      "k": 4,
+      "n_null": 500,
+      "null_mean": 0.968403191094859,
+      "null_p2_5": 0.9558154548458854,
+      "null_p5": 0.9594384082780667,
+      "null_p50": 0.9695982475672398,
+      "null_p97_5": 0.9744010639695926,
+      "null_min": 0.9490921601473457,
+      "recursive_removed": "glycine",
+      "recursive_pr_auc": 0.9445626870702952,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.9349862720666344,
+      "fixed_pct": 0.0
+    },
+    {
+      "k": 5,
+      "n_null": 500,
+      "null_mean": 0.9672975610324932,
+      "null_p2_5": 0.9528972281534267,
+      "null_p5": 0.9566904000481838,
+      "null_p50": 0.9684839423456596,
+      "null_p97_5": 0.974267102183437,
+      "null_min": 0.9423731113813824,
+      "recursive_removed": "methanol",
+      "recursive_pr_auc": 0.9275541294521216,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.9327055655848696,
+      "fixed_pct": 0.0
+    },
+    {
+      "k": 6,
+      "n_null": 500,
+      "null_mean": 0.9649414252213203,
+      "null_p2_5": 0.9462028161393182,
+      "null_p5": 0.9515439028897853,
+      "null_p50": 0.9666005629612858,
+      "null_p97_5": 0.9743730066984408,
+      "null_min": 0.9213332355493656,
+      "recursive_removed": "L-tyrosine",
+      "recursive_pr_auc": 0.9097556596525388,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.9214782689556228,
+      "fixed_pct": 0.2
+    },
+    {
+      "k": 7,
+      "n_null": 500,
+      "null_mean": 0.9633356604324803,
+      "null_p2_5": 0.9441616238452902,
+      "null_p5": 0.9477523355241901,
+      "null_p50": 0.9649193337255149,
+      "null_p97_5": 0.9742724378673736,
+      "null_min": 0.9064792731923004,
+      "recursive_removed": "D-phenylalanine",
+      "recursive_pr_auc": 0.8848954025323813,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.904364092960476,
+      "fixed_pct": 0.0
+    },
+    {
+      "k": 8,
+      "n_null": 500,
+      "null_mean": 0.9605409689165761,
+      "null_p2_5": 0.9344224922535211,
+      "null_p5": 0.9395132464820528,
+      "null_p50": 0.962872459156502,
+      "null_p97_5": 0.9742231642421232,
+      "null_min": 0.9114744871683368,
+      "recursive_removed": "lipoproteins",
+      "recursive_pr_auc": 0.8619951148149384,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.9078365215180296,
+      "fixed_pct": 0.0
+    },
+    {
+      "k": 9,
+      "n_null": 500,
+      "null_mean": 0.9581027254329388,
+      "null_p2_5": 0.9252245937823605,
+      "null_p5": 0.9354213200391059,
+      "null_p50": 0.960667142113545,
+      "null_p97_5": 0.9737382986019214,
+      "null_min": 0.901506370022398,
+      "recursive_removed": "Pyruvic acid",
+      "recursive_pr_auc": 0.8484124767934985,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.9037735834696098,
+      "fixed_pct": 0.2
+    },
+    {
+      "k": 10,
+      "n_null": 500,
+      "null_mean": 0.9546697095464775,
+      "null_p2_5": 0.9172707637439598,
+      "null_p5": 0.9272192771932428,
+      "null_p50": 0.957898311340886,
+      "null_p97_5": 0.9720754014787195,
+      "null_min": 0.888142408031163,
+      "recursive_removed": "L-allo-Isoleucine",
+      "recursive_pr_auc": 0.8252008809498994,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.9072751766976632,
+      "fixed_pct": 1.2
+    },
+    {
+      "k": 11,
+      "n_null": 500,
+      "null_mean": 0.9494734947438117,
+      "null_p2_5": 0.9027813259124339,
+      "null_p5": 0.9193811994539005,
+      "null_p50": 0.952374020132094,
+      "null_p97_5": 0.971712170623207,
+      "null_min": 0.856892378682195,
+      "recursive_removed": "L-leucine",
+      "recursive_pr_auc": 0.8015920336537846,
+      "recursive_pct": 0.0,
+      "fixed_pr_auc": 0.8847213596491109,
+      "fixed_pct": 1.2
+    }
+  ],
+  "contrast_k3": [
+    {
+      "group": "contaminant_trio",
+      "features": "Dimethyl sulfone;isopropanol;methanol",
+      "pr_auc": 0.953817687477112,
+      "pct_in_null_k3": 0.2
+    },
+    {
+      "group": "biology_trio",
+      "features": "lipoproteins;L-valine;L-tyrosine",
+      "pr_auc": 0.9593702829084034,
+      "pct_in_null_k3": 1.2
+    }
+  ],
+  "spike": {
+    "0.75": {
+      "baseline_with_spike": {
+        "median": 0.973076934007254,
+        "min": 0.9715796877234268,
+        "max": 0.9791726800408326
+      },
+      "roar_drop_spike": {
+        "median": 0.0002643185530179504,
+        "min": -0.0012329277308091857,
+        "max": 0.006360064586596548
+      },
+      "roar_drop_L-valine": {
+        "median": 0.0027212768180501223,
+        "min": 0.0010498813739915347,
+        "max": 0.003578549159016009
+      },
+      "roar_drop_lipoproteins": {
+        "median": 0.004807945271798231,
+        "min": 0.002875893989875533,
+        "max": 0.00727143749353365
+      },
+      "roar_drop_isopropanol": {
+        "median": 0.0033945387425485807,
+        "min": 0.0016317490670255674,
+        "max": 0.0046152968495781765
+      },
+      "roar_drop_Dimethyl sulfone": {
+        "median": 0.006070679415767,
+        "min": 0.0005510783393579688,
+        "max": 0.007887828092427607
+      },
+      "spike_roar_rank_of_22": {
+        "median": 14.5,
+        "min": 1.0,
+        "max": 21.0
+      },
+      "spike_pct_among_22_single_removals": {
+        "median": 65.9090909090909,
+        "min": 4.545454545454546,
+        "max": 95.45454545454545
+      },
+      "best_bio_roar_rank": {
+        "median": 2.0,
+        "min": 1.0,
+        "max": 4.0
+      },
+      "spike_shap_rank": {
+        "median": 10.0,
+        "min": 3.0,
+        "max": 19.0
+      },
+      "recursive_step_removed": {
+        "median": 11.0,
+        "min": 4.0,
+        "max": 11.0
+      }
+    },
+    "1.25": {
+      "baseline_with_spike": {
+        "median": 0.9775856821936436,
+        "min": 0.9730777028286705,
+        "max": 0.9812436808616716
+      },
+      "roar_drop_spike": {
+        "median": 0.004773066739407583,
+        "min": 0.0002650873744344251,
+        "max": 0.008431065407435545
+      },
+      "roar_drop_L-valine": {
+        "median": 0.001983171113529414,
+        "min": 0.00019696144316361242,
+        "max": 0.002707974127547641
+      },
+      "roar_drop_lipoproteins": {
+        "median": 0.004552120889166844,
+        "min": 0.00010330505547195834,
+        "max": 0.0069671138793353515
+      },
+      "roar_drop_isopropanol": {
+        "median": 0.0026984402156363108,
+        "min": -0.0003802919142760208,
+        "max": 0.005883060897450387
+      },
+      "roar_drop_Dimethyl sulfone": {
+        "median": 0.003772628184372684,
+        "min": -0.0009002977588624672,
+        "max": 0.008938641033824024
+      },
+      "spike_roar_rank_of_22": {
+        "median": 3.0,
+        "min": 1.0,
+        "max": 9.0
+      },
+      "spike_pct_among_22_single_removals": {
+        "median": 13.636363636363635,
+        "min": 4.545454545454546,
+        "max": 40.909090909090914
+      },
+      "best_bio_roar_rank": {
+        "median": 3.0,
+        "min": 1.0,
+        "max": 6.0
+      },
+      "spike_shap_rank": {
+        "median": 3.0,
+        "min": 3.0,
+        "max": 6.0
+      },
+      "recursive_step_removed": {
+        "median": 4.0,
+        "min": 3.0,
+        "max": 8.0
+      }
+    },
+    "1.75": {
+      "baseline_with_spike": {
+        "median": 0.9855604372053686,
+        "min": 0.9779331667313064,
+        "max": 0.9914713366625054
+      },
+      "roar_drop_spike": {
+        "median": 0.012747821751132593,
+        "min": 0.00512055127707034,
+        "max": 0.01865872120826939
+      },
+      "roar_drop_L-valine": {
+        "median": 0.0008312859774008974,
+        "min": -0.0009508078439534051,
+        "max": 0.003014367107466942
+      },
+      "roar_drop_lipoproteins": {
+        "median": 0.00031747992258390756,
+        "min": -0.000527782213357475,
+        "max": 0.004255998505331315
+      },
+      "roar_drop_isopropanol": {
+        "median": 0.001538664174408233,
+        "min": -0.0019979564873802147,
+        "max": 0.004029169642237873
+      },
+      "roar_drop_Dimethyl sulfone": {
+        "median": 0.003824894109569432,
+        "min": -0.0016469294360628162,
+        "max": 0.010259106252980987
+      },
+      "spike_roar_rank_of_22": {
+        "median": 1.0,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "spike_pct_among_22_single_removals": {
+        "median": 4.545454545454546,
+        "min": 4.545454545454546,
+        "max": 9.090909090909092
+      },
+      "best_bio_roar_rank": {
+        "median": 4.0,
+        "min": 3.0,
+        "max": 7.0
+      },
+      "spike_shap_rank": {
+        "median": 1.0,
+        "min": 1.0,
+        "max": 2.0
+      },
+      "recursive_step_removed": {
+        "median": 1.0,
+        "min": 1.0,
+        "max": 3.0
+      }
+    }
+  },
+  "real_single_removal_drops": {
+    "Dimethyl sulfone": 0.0073449934912800385,
+    "lipoproteins": 0.005177179900959228,
+    "isopropanol": 0.003304337816957048,
+    "methanol": 0.0028767876799100645,
+    "L-valine": 0.0020587251421906316,
+    "L-tyrosine": 0.002002308587905177,
+    "glycine": 0.001454037519009188,
+    "Pyruvic acid": 0.00125661970277402,
+    "acetoacetate": 0.0010401151218252247,
+    "histidine": 0.0005732018408584061,
+    "(R)-3-Hydroxybutyric acid": 0.0003435516859086052,
+    "L-alanine": 0.000253479095317255,
+    "acetate": 0.00012599927035561453,
+    "creatinine": -0.00011361510593854707,
+    "L-glutamine": -0.0001287448165427918,
+    "hypoxanthine": -0.0002672554866207655,
+    "L-Lactic acid": -0.000601976187845743,
+    "citrate": -0.0006111583514319952,
+    "D-phenylalanine": -0.0008394551229581326,
+    "L-leucine": -0.0010665603337501883,
+    "L-allo-Isoleucine": -0.0010970472592464198
+  },
+  "protocol": {
+    "cv": "10x repeated StratifiedGroupKFold(n_splits=5, shuffle=True), groups=patient id from ^(\\d+)[-_](\\d+)[-_]S$, identical folds for all conditions",
+    "repeat_seeds": [
+      42,
+      142,
+      242,
+      342,
+      442,
+      542,
+      642,
+      742,
+      842,
+      942
+    ],
+    "model_seed": "repeat_seed*100+fold",
+    "null": "k=1,2 exhaustive (21, 210 subsets); k>=3 500 distinct uniform subsets, rng seed 20261012+k",
+    "shap": "mean |SHAP| (TreeExplainer) on full data, averaged over model seeds 2026-2035",
+    "spike": "spike = d*y + N(0,1), d in [0.75, 1.25, 1.75], 10 reps, rng seed 777",
+    "percentile": "% of random removals with PR-AUC <= value",
+    "data_sha256": {
+      "m_MTBLS242_v2_maf.tsv": "ac8828014a93ae197a3f6936d9b544bf90967825290508b32bfd4e8e2a1b3bfc",
+      "s_MTBLS242.txt": "4ff5853cb7ec4f6c51ea1c2fc60be269f00520cb41b8736ea1c41f407b3306d3"
+    },
+    "versions": {
+      "xgboost": "3.2.0",
+      "shap": "0.51.0",
+      "sklearn": "1.9.0",
+      "numpy": "2.4.6",
+      "pandas": "3.0.3"
+    },
+    "python": "/Users/admin/miniconda3/envs/superaiss6/bin/python"
+  }
+}

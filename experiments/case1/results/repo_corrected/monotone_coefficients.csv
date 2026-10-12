@@ -1,0 +1,19 @@
+metabolite,constraint,standardized_coefficient,constraint_is_binding
+L-tyrosine,1,0.2829247719950035,False
+L-Lactic acid,1,0.21674386435159776,False
+acetoacetate,0,0.13636442463098755,False
+acetate,0,0.08486340088090301,False
+(R)-3-Hydroxybutyric acid,0,0.06799578260149049,False
+hypoxanthine,0,0.05788091982753838,False
+L-glutamine,-1,0.0,True
+L-valine,1,0.0,True
+histidine,-1,0.0,True
+L-allo-Isoleucine,1,0.0,True
+L-alanine,1,0.0,True
+L-leucine,1,0.0,True
+lipoproteins,1,0.0,True
+D-phenylalanine,1,0.0,True
+creatinine,0,-0.015688555572832257,False
+glycine,-1,-0.02250566340754287,False
+citrate,0,-0.0748227798871905,False
+Pyruvic acid,0,-0.291104349931127,False

@@ -1,0 +1,28 @@
+% Case 3 (MTBLS1) -- generated from experiments/case3/case3_mtbls1_confound.py (see RESULTS.md)
+% Requires \usepackage{booktabs}
+\begin{table}[t]
+\centering
+\caption{MTBLS1 urine samples by diagnostic label, sample-name prefix and sex. The prefix
+(acquisition/collection batch) determines the label exactly; sex does not.}
+\label{tab:case3_crosstab}
+\begin{tabular}{llrrrr}
+\toprule
+Label & Prefix & Female & Male & Samples & Subjects$^{a}$ \\
+\midrule
+Control & \texttt{ADG19007u} & 28 & 56 & 84 & 12 (4F/8M) \\
+        & \texttt{ADG10003u} &  0 &  0 &  0 & 0 \\
+T2DM    & \texttt{ADG10003u} & 26 & 22 & 48 & 28--30$^{b}$ \\
+        & \texttt{ADG19007u} &  0 &  0 &  0 & 0 \\
+\midrule
+Total   &                    & 54 & 78 & 132 & 40--42 \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\footnotesize
+$^{a}$Controls: sample number $=10k+t$, $t=1..7$, giving 12 blocks of 7 (matches the
+deposited protocol: 12 volunteers, 7 time points, 8M/4F).
+$^{b}$Protocol: 30 patients, 1--3 time points, 50 samples (17M/13F); 48 samples deposited, no
+patient identifiers. A gap-$\le$3 numbering heuristic yields 14 T2DM ``subjects'', 3 of which
+provably merge different patients (4, 5 or 8 samples, or mixed sex).
+\end{table}

@@ -1,0 +1,22 @@
+metabolite,constraint,standardized_coefficient,constraint_is_binding
+L-valine,1,0.11098032954105484,False
+L-allo-Isoleucine,1,0.10066607094887493,False
+Pyruvic acid,0,0.08302540262282496,False
+L-Lactic acid,1,0.08193507865261451,False
+L-tyrosine,1,0.07878616615040572,False
+L-leucine,1,0.07292511516285362,False
+D-phenylalanine,1,0.07092371428816927,False
+creatinine,0,0.03285574953581851,False
+isopropanol,0,0.030188426998315754,False
+L-alanine,1,0.02886757619482773,False
+methanol,0,0.002916019278311451,False
+lipoproteins,1,0.0,True
+histidine,-1,0.0,True
+Dimethyl sulfone,0,-0.011861570334222098,False
+acetoacetate,0,-0.021462499911363165,False
+glycine,-1,-0.02609268179712269,False
+(R)-3-Hydroxybutyric acid,0,-0.033424459499705045,False
+hypoxanthine,0,-0.03501997489048011,False
+L-glutamine,-1,-0.0405512305378397,False
+acetate,0,-0.05039875383131576,False
+citrate,0,-0.05198077777209669,False

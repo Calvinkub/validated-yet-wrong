@@ -1,0 +1,16 @@
+{
+  "seed": 20261011,
+  "datasets_per_cell": 1000,
+  "kept": 36000,
+  "jobs": 36000,
+  "P_MARKERS": 11,
+  "Q_AUX": 10,
+  "K_RESPONDER": 6,
+  "FACTOR_RHO": 0.3,
+  "RIDGE_LAMBDA": 10.0,
+  "N_FOLDS": 5,
+  "N_NULL": 200,
+  "ALPHA": 0.05,
+  "seconds": 1169.4,
+  "numpy": "2.4.6"
+}

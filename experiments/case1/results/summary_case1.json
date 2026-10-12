@@ -1,0 +1,270 @@
+{
+  "repo_commit": "637a58efc70005e723e11bc787bd486db42fd0a9",
+  "seed": 42,
+  "cv": "20 repeats x 5-fold stratified (controls.repeated_stratified_cv, seed 42)",
+  "repo_corrected": {
+    "task": "forecast residualized 12-month metabolic response from preop NMR",
+    "outcome_definition": ">=6/11 markers improve MORE than their own baseline predicts (change residualized on baseline, fitted in-fold)",
+    "n_subjects": 71,
+    "n_responders": 31,
+    "prevalence_baseline": 0.43661971830985913,
+    "features_used": 18,
+    "artifact_features_dropped": [
+      "isopropanol",
+      "methanol",
+      "Dimethyl sulfone"
+    ],
+    "artifact_drop_reason": "exogenous compounds; isopropanol is a surgical skin-prep contaminant (Bridge_ai_summit_nmr_2026, Experiment A caveats)",
+    "metric": "PR-AUC (average precision)",
+    "evaluation": "20 repeats x 5-fold stratified CV, held-out only",
+    "model_pr_auc_mean": 0.48305644051715485,
+    "model_pr_auc_std_across_repeats": 0.02668262493669048,
+    "observed_lift_over_prevalence": 1.106355073442516,
+    "CONTROL_trivial_scorer_pr_auc": 0.5223536600524695,
+    "CONTROL_model_minus_trivial": -0.039297219535314676,
+    "CONTROL_model_minus_trivial_ci95": [
+      -0.05750739298812957,
+      -0.022892751751940714
+    ],
+    "CONTROL_model_beats_trivial": false,
+    "CONTROL_pairing_destroyed_null_lift_median": 1.0393930950556896,
+    "CONTROL_pairing_destroyed_null_lift_p95": 1.2262403193564138,
+    "CONTROL_observed_lift_clears_null": false,
+    "CONTROL_permutation_p_value": 0.8935532233883059,
+    "solver_convergence_rate": 1.0,
+    "monotone_positive": 8,
+    "monotone_negative": 3,
+    "unconstrained": 7,
+    "binding_constraints": [
+      "L-alanine",
+      "L-valine",
+      "L-glutamine",
+      "histidine",
+      "L-allo-Isoleucine",
+      "L-leucine",
+      "lipoproteins",
+      "D-phenylalanine"
+    ],
+    "max_abs_standardized_coefficient": 0.291104349931127,
+    "VERDICT": "No evidence of forecasting skill beyond regression to the mean."
+  },
+  "repo_legacy": {
+    "task": "forecast residualized 12-month metabolic response from preop NMR",
+    "outcome_definition": "legacy: >=9/11 markers move in the literature direction (SUPERSEDED)",
+    "n_subjects": 71,
+    "n_responders": 31,
+    "prevalence_baseline": 0.43661971830985913,
+    "features_used": 21,
+    "artifact_features_dropped": [],
+    "artifact_drop_reason": "exogenous compounds; isopropanol is a surgical skin-prep contaminant (Bridge_ai_summit_nmr_2026, Experiment A caveats)",
+    "metric": "PR-AUC (average precision)",
+    "evaluation": "20 repeats x 5-fold stratified CV, held-out only",
+    "model_pr_auc_mean": 0.6834685836650122,
+    "model_pr_auc_std_across_repeats": 0.0429441214164756,
+    "observed_lift_over_prevalence": 1.5653635303295441,
+    "CONTROL_trivial_scorer_pr_auc": 0.7088713931571075,
+    "CONTROL_model_minus_trivial": -0.02540280949209528,
+    "CONTROL_model_minus_trivial_ci95": [
+      -0.04698903551805327,
+      -0.00614912050581695
+    ],
+    "CONTROL_model_beats_trivial": false,
+    "CONTROL_pairing_destroyed_null_lift_median": 2.0393045960069744,
+    "CONTROL_pairing_destroyed_null_lift_p95": 2.5106326117394593,
+    "CONTROL_observed_lift_clears_null": false,
+    "CONTROL_permutation_p_value": 0.001999000499750125,
+    "solver_convergence_rate": 1.0,
+    "monotone_positive": 8,
+    "monotone_negative": 3,
+    "unconstrained": 10,
+    "binding_constraints": [
+      "histidine",
+      "lipoproteins"
+    ],
+    "max_abs_standardized_coefficient": 0.11098032954105484,
+    "VERDICT": "No evidence of forecasting skill beyond regression to the mean."
+  },
+  "legacy": {
+    "n": 71,
+    "n_responders": 31,
+    "prevalence": 0.43661971830985913,
+    "n_features": 21,
+    "dropped": [],
+    "n_folds_used": 100,
+    "convergence_rate": 1.0,
+    "mean_heldout_label_prevalence": 0.4361904761904762,
+    "model_pr_auc": 0.6834685836650121,
+    "model_pr_auc_sd_across_repeats": 0.04294412141647558,
+    "trivial_pr_auc": 0.7088713931571075,
+    "lift": 1.565363530329544,
+    "gap_model_minus_trivial_repeat_bootstrap": {
+      "point": -0.02540280949209539,
+      "ci95": [
+        -0.046989035518053376,
+        -0.00614912050581695
+      ],
+      "note": "repo method: bootstrap over the 20 per-repeat means, 5000 draws"
+    },
+    "gap_subject_bootstrap": {
+      "point": -0.03494294044897619,
+      "pooled_model_ap": 0.6177889514266864,
+      "pooled_trivial_ap": 0.6527318918756626,
+      "ci95": [
+        -0.12240853896067164,
+        0.05242141409427893
+      ],
+      "n_boot": 2000,
+      "seed": 42
+    },
+    "permutation_refit": {
+      "p": 0.000999000999000999,
+      "n_valid": 1000,
+      "n_requested": 1000,
+      "statistic": "mean over repeats of mean fold AP",
+      "scheme": "per fold: permute training labels, rerun inner l2 selection + fit; held-out labels fixed",
+      "null_median": 0.5680876960341246,
+      "null_p95": 0.5911434760675832
+    },
+    "pairing_null_scorer": {
+      "median_lift": 2.0393045960069744,
+      "p95_lift": 2.5106326117394593,
+      "n_valid": 500,
+      "n_requested": 500,
+      "p": 0.998003992015968
+    },
+    "pairing_null_refit": {
+      "median_lift": 1.989362559679012,
+      "p95_lift": 2.3294333699254497,
+      "median_null_prevalence": 0.352112676056338,
+      "n_valid": 500,
+      "n_requested": 500,
+      "p": 0.9860279441117764
+    }
+  },
+  "permarker": {
+    "n": 71,
+    "n_responders": 31,
+    "prevalence": 0.43661971830985913,
+    "n_features": 18,
+    "dropped": [
+      "isopropanol",
+      "methanol",
+      "Dimethyl sulfone"
+    ],
+    "n_folds_used": 100,
+    "convergence_rate": 1.0,
+    "mean_heldout_label_prevalence": 0.4535714285714285,
+    "model_pr_auc": 0.4830564405171548,
+    "model_pr_auc_sd_across_repeats": 0.026682624936690484,
+    "trivial_pr_auc": 0.5223536600524695,
+    "lift": 1.1063550734425158,
+    "gap_model_minus_trivial_repeat_bootstrap": {
+      "point": -0.03929721953531473,
+      "ci95": [
+        -0.05750739298812957,
+        -0.022892751751940714
+      ],
+      "note": "repo method: bootstrap over the 20 per-repeat means, 5000 draws"
+    },
+    "gap_subject_bootstrap": {
+      "point": -0.04239962531697285,
+      "pooled_model_ap": 0.4285636244407292,
+      "pooled_trivial_ap": 0.47096324975770204,
+      "ci95": [
+        -0.1493874115560039,
+        0.05153604256000037
+      ],
+      "n_boot": 2000,
+      "seed": 42
+    },
+    "permutation_refit": {
+      "p": 1.0,
+      "n_valid": 200,
+      "n_requested": 200,
+      "statistic": "mean over repeats of mean fold AP",
+      "scheme": "per fold: permute training labels, rerun inner l2 selection + fit; held-out labels fixed",
+      "null_median": 0.5322795865675329,
+      "null_p95": 0.5508530171404874
+    },
+    "pairing_null_scorer": {
+      "median_lift": 1.0393930950556896,
+      "p95_lift": 1.2262403193564138,
+      "n_valid": 500,
+      "n_requested": 500,
+      "p": 0.281437125748503
+    }
+  },
+  "joint": {
+    "n": 71,
+    "n_responders": 37,
+    "prevalence": 0.5211267605633803,
+    "n_features": 18,
+    "dropped": [
+      "isopropanol",
+      "methanol",
+      "Dimethyl sulfone"
+    ],
+    "n_folds_used": 100,
+    "convergence_rate": 1.0,
+    "mean_heldout_label_prevalence": 0.5142490842490842,
+    "model_pr_auc": 0.553693989699374,
+    "model_pr_auc_sd_across_repeats": 0.04603987011098863,
+    "trivial_pr_auc": 0.5893006076645416,
+    "lift": 1.062493872125826,
+    "gap_model_minus_trivial_repeat_bootstrap": {
+      "point": -0.03560661796516762,
+      "ci95": [
+        -0.05434836034431143,
+        -0.016668675025771938
+      ],
+      "note": "repo method: bootstrap over the 20 per-repeat means, 5000 draws"
+    },
+    "gap_subject_bootstrap": {
+      "point": -0.03688296180998167,
+      "pooled_model_ap": 0.4965248503537185,
+      "pooled_trivial_ap": 0.5334078121637003,
+      "ci95": [
+        -0.11104948936438512,
+        0.03748221748795937
+      ],
+      "n_boot": 2000,
+      "seed": 42
+    },
+    "permutation_refit": {
+      "p": 1.0,
+      "n_valid": 1000,
+      "n_requested": 1000,
+      "statistic": "mean over repeats of mean fold AP",
+      "scheme": "per fold: permute training labels, rerun inner l2 selection + fit; held-out labels fixed",
+      "null_median": 0.5949827434144939,
+      "null_p95": 0.6132251184043229
+    },
+    "pairing_null_scorer": {
+      "median_lift": 1.0450052711515694,
+      "p95_lift": 1.2067852638385166,
+      "n_valid": 500,
+      "n_requested": 500,
+      "p": 0.40119760479041916
+    }
+  },
+  "coupling_diagnostics": {
+    "raw": {
+      "median_corr_own_baseline": -0.6181747078162899,
+      "median_abs_corr_other_baselines": 0.1628735574987938,
+      "max_abs_corr_other_baselines": 0.5741959490591897,
+      "spearman_improved_count_vs_trivial_score": 0.5403420523138832
+    },
+    "permarker": {
+      "median_corr_own_baseline": 2.738606630255277e-17,
+      "median_abs_corr_other_baselines": 0.08669412722791928,
+      "max_abs_corr_other_baselines": 0.3508635044783916,
+      "spearman_improved_count_vs_trivial_score": -0.08239436619718309
+    },
+    "joint": {
+      "median_corr_own_baseline": 3.5106433819322655e-16,
+      "median_abs_corr_other_baselines": 2.922832931307167e-15,
+      "max_abs_corr_other_baselines": 1.7196407280501152e-14,
+      "spearman_improved_count_vs_trivial_score": -0.01582830315224681
+    }
+  }
+}

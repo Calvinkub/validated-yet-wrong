@@ -1,0 +1,11 @@
+{
+  "baseline_grouped": {
+    "mean": 0.972812615454236,
+    "sd_folds": 0.019951509336375472
+  },
+  "baseline_ungrouped_stratified": {
+    "mean": 0.9719330731483137,
+    "sd_folds": 0.024088351601469504
+  },
+  "runtime_s": 31.6
+}
