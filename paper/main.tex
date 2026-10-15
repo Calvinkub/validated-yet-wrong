@@ -168,10 +168,18 @@ validation on small cohorts is well established
 
 \subsection{Datasets}
 \textbf{MTBLS242} \cite{mtbls242, gralka2015}: serum $^1$H-NMR from a
-bariatric surgery cohort; 106 preoperative and 71 twelve-month samples
-(465 samples over five time points); 21 quantified metabolites. Patient
-identifiers are recoverable from sample names with the pattern
-\verb|^(\d+)[-_](\d+)[-_]S$|.
+bariatric surgery cohort, released 10 Feb.\ 2017. The sample sheet lists 465
+samples at five visits, labelled in its time-point factor as preoperative
+(106), and 3, 6, 9 and 12 months after surgery (98, 98, 92 and 71);
+21 metabolites are quantified. We re-downloaded the sheet from MetaboLights
+on 15 Oct.\ 2026 and it is byte-identical to the copy used in all
+experiments. Patient identifiers are not a column; they are recoverable from
+sample names with the pattern \verb|^(\d+)[-_](\d+)[-_]S$| (one 6-month
+sample, \verb|2_0242_2|, does not match and does not affect any analysis
+here, which uses only the preoperative and 12-month visits). All 71
+twelve-month patients also have a preoperative sample. The sheet records
+neither the surgical procedure per sample nor any clinical covariate, although
+the study design lists both gastric bypass and sleeve gastrectomy.
 
 \textbf{MTBLS1} \cite{salek2007}: urine $^1$H-NMR, type 2 diabetes vs.\
 control; 132 samples from 40--42 subjects (12 volunteers sampled at seven
