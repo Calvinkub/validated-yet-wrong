@@ -26,7 +26,7 @@
 \begin{document}
 
 \title{Validated, yet Wrong: Four Ways Small-$n$ Metabolomics Machine Learning Passes Standard Checks\\
-\thanks{Code, fixed partitions, and verification scripts: \todo{make repository public; github.com/Calvinkub/validated-yet-wrong, commit hash}.}}
+\thanks{Code, simulation, fixed analysis designs and verification scripts: \protect\url{https://github.com/Calvinkub/validated-yet-wrong} (tag \texttt{paper-v1}).}}
 
 \author{
 \IEEEauthorblockN{Chaiyaporn Orrudee}
@@ -665,17 +665,24 @@ headline score, and we release code that runs them.
 
 % ===========================================================================
 \section*{Data and Code Availability}
-MTBLS242, MTBLS1 and MTBLS881 are public through MetaboLights \cite{haug2020}.
-\todo{Repository URL, commit, test-suite instructions.}
+MTBLS242, MTBLS1 and MTBLS881 are public through MetaboLights \cite{haug2020};
+the datasets are not redistributed. All code, intermediate results and the
+pre-registration file for the MTBLS881 replication are in
+\url{https://github.com/Calvinkub/validated-yet-wrong} (tag
+\texttt{paper-v1}). Each experiment folder contains a \texttt{RESULTS.md}
+listing every reported number with its script, random seed and command. The
+simulation runs with \texttt{python simulation/sim\_pairing\_null.py} and
+takes about 11 minutes on 8 cores; \texttt{--check} runs the pure-noise
+sanity test. Cases~1 and 1b reuse the controls from the earlier
+\texttt{mtbls242-forecast-honest} repository, as stated in the README.
 
 \section*{Acknowledgment}
 \todo{Funding, advisors.}
 
 \section*{Use of Generative AI}
 The authors used Claude (Anthropic) to assist with analysis code, the
-simulation, and drafting text. The authors reviewed all code and text,
-re-ran every reported analysis, and take full responsibility for the
-content. \todo{Adjust wording to the target venue's policy.}
+simulation, and drafting text. The authors are responsible for the content
+of this paper.
 
 % ===========================================================================
 \begin{thebibliography}{00}
