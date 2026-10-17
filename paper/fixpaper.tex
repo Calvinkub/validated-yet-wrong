@@ -97,9 +97,7 @@ and still be wrong.
 
 The four analyses we examine are our own earlier work: a responder forecast
 and a feature-attribution study on MTBLS242, and a diabetes classifier on
-MTBLS1 \todo{cite or link the three earlier repositories:
-\texttt{mtbls242-forecast-honest}, the ROAR repository, and
-\texttt{Calvinkub/Bridge\_ai\_summit\_nmr\_2026}}. Each passed the checks we
+MTBLS1 \cite{bridge2026, roar2026, honest2026}. Each passed the checks we
 had applied at the time. This paper makes four contributions:
 \begin{enumerate}
   \item A taxonomy of four failure modes, each paired with the standard check
@@ -203,8 +201,9 @@ the $-1$\,h and 20\,h samples at each site.
 \subsection{Models and evaluation}
 We deliberately reuse the models from the original analyses rather than
 tuning new ones, since the point is to evaluate the checks, not the models.
-Cases 2--4 use XGBoost \cite{chen2016} with monotonic constraints whose
-directions were assigned from the metabolomics literature. Case~1 uses
+Cases 2 and 3 use XGBoost \cite{chen2016} with monotonic constraints whose
+directions were assigned from the metabolomics literature; Case~4 re-runs the
+unconstrained XGBoost of its original analysis. Case~1 uses
 L2-penalised logistic regression with literature-assigned sign constraints
 on the marker coefficients; its replication (Case~1b) uses the same model
 without constraints. The headline metric is PR-AUC (average precision),
@@ -227,7 +226,7 @@ Case & Failure mode & Data & Reported result & Standard check passed & Exposing 
 1 & Outcome manufactured from features & MTBLS242 & PR-AUC 0.683 & Label permutation (refit), $p=0.001$ & Learn-nothing baseline; joint residualisation \\
 2 & Putative contaminants ranked with biology & MTBLS242 & PR-AUC 0.973 & ROAR faithfulness & Known-artefact positive control \\
 3 & Collection protocol equals label & MTBLS1 & PR-AUC 0.976 & Subject-grouped CV & Metadata and protocol audit \\
-4 & Label name $\neq$ label meaning & MTBLS242 & ROC-AUC 0.973\todo{provenance} & Subject-grouped CV & Label-provenance audit \\
+4 & Label name $\neq$ label meaning & MTBLS242 & ROC-AUC 0.973 & Subject-grouped CV & Label-provenance audit \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -434,10 +433,11 @@ matter to the model. That is true. But isopropanol and methanol are not
 expected products of human metabolism at these levels; isopropanol is used
 for skin preparation, and both can enter samples during collection and
 handling \cite{bernini2011, vandersar2015}. Dimethyl sulfone is less clear:
-it can come from diet, supplements or gut microbial metabolism, any of which
-may change after bariatric surgery \todo{cite a source for dietary and
-microbial origins of dimethyl sulfone}. We therefore call the three compounds
-\emph{putatively exogenous}. Their identity as handling artefacts is not
+it is a regular low-micromolar plasma metabolite that derives from diet,
+intestinal bacterial metabolism and endogenous methanethiol metabolism
+\cite{engelke2005}, and diet and gut flora may change after bariatric surgery.
+We therefore call the three compounds \emph{putatively exogenous}, with the
+weakest case for dimethyl sulfone. Their identity as handling artefacts is not
 established from the deposited data, and the argument below does not depend
 on it.
 
@@ -567,10 +567,14 @@ Total   &                    & 54 & 78 & 132 & 40--42 \\
 \label{sec:case4}
 Our ``obese vs.\ non-obese'' task on MTBLS242 is in fact ``preoperative vs.\
 twelve months after surgery'': \verified{71} of \verified{106} patients
-appear in both classes. Subject-grouped CV (ROC-AUC 0.969) and naive CV
-(0.970) agree \todo{add the script, seed and command for these two values
-and for the 0.973 in Table~\ref{tab:taxonomy}, or remove them}, so the issue
-is not leakage but label meaning. The sample sheet records no body-mass
+appear in both classes, so the label records the visit, not a measurement of
+obesity. The originally reported ROC-AUC of 0.973 came from a single
+stratified 5-fold split (re-run: \verified{0.974}). Over 10 repeats of 5-fold
+CV with the same model, subject-grouped and naive CV both give ROC-AUC
+\verified{0.965}, although in naive CV \verified{65\%} of test samples
+have the same patient's other visit in the training folds. Removing that
+leakage does not lower the score, so the issue is not leakage but label
+meaning. The sample sheet records no body-mass
 index, so whether any twelve-month patient is in fact non-obese cannot be
 checked; a year after bariatric surgery many patients need not be.
 
@@ -732,8 +736,8 @@ about how common these failures are. The findings concern validation
 practice; they say nothing for or against the biology of obesity or diabetes.
 Regression to the mean is classical statistics, and our contribution is
 limited to showing how ML practice fails to detect it. The exogenous origin
-of the Case~2 compounds is plausible but not established from the deposited
-data. The simulation uses Gaussian data, a linear ridge model and one outcome
+of the Case~2 compounds is plausible for isopropanol and methanol, only
+partial for dimethyl sulfone, and not established from the deposited data. The simulation uses Gaussian data, a linear ridge model and one outcome
 rule; non-linear models and other rules may differ in degree. The
 pairing-destroyed null is conservative and can miss real effects at low
 reliability, so it should be a diagnostic, not the sole test. Finally, the
@@ -756,17 +760,20 @@ alongside their headline score, and we release code that runs them.
 % ===========================================================================
 \section*{Data and Code Availability}
 MTBLS242, MTBLS1 and MTBLS881 are public through MetaboLights \cite{haug2020};
-the datasets are not redistributed. The simulation, the Case~2 and Case~3
+the datasets are not redistributed. The simulation, the Case~2, 3 and 4
 analyses, intermediate results and the pre-registration file for the MTBLS881
 replication are in \url{https://github.com/Calvinkub/validated-yet-wrong}
-(tag \texttt{paper-v1}). Each experiment folder contains a \texttt{RESULTS.md}
-listing every reported number with its script, random seed and command. The
-simulation runs with \texttt{python simulation/sim\_pairing\_null.py} and
-takes about 11 minutes on 8 cores; \texttt{--check} runs the pure-noise
-sanity test. Cases~1 and 1b import the outcome, model and control code from
-our earlier \texttt{mtbls242-forecast-honest} repository, which must be
-obtained separately \todo{public URL and commit
-\texttt{637a58e} of \texttt{mtbls242-forecast-honest}}.
+(tag \texttt{paper-v1}) \todo{repository returns 404 (private) as of
+18 Oct.\ 2026: make it public and create the tag}. Each experiment folder
+contains a \texttt{RESULTS.md} listing every reported number with its script,
+random seed and command. The simulation runs with
+\texttt{python simulation/sim\_pairing\_null.py} and takes about 11 minutes on
+8 cores; \texttt{--check} runs the pure-noise sanity test. The original
+analyses audited in Cases~2--4 are public \cite{bridge2026, roar2026}. Cases~1
+and 1b import the outcome, model and control code from our earlier
+\texttt{mtbls242-forecast-honest} repository \cite{honest2026}, which must be
+obtained separately \todo{commit \texttt{637a58e} is not on GitHub: push it
+and add the URL, or state that the code is available on request}.
 
 \section*{Acknowledgment}
 \todo{Funding, advisors.}
@@ -796,7 +803,7 @@ of this paper.
 \bibitem{vickers2001} A. J. Vickers and D. G. Altman, ``Analysing controlled trials with baseline and follow up measurements,'' \textit{BMJ}, vol. 323, no. 7321, pp. 1123--1124, 2001, doi: 10.1136/bmj.323.7321.1123.
 \bibitem{glymour2005} M. M. Glymour, J. Weuve, L. F. Berkman, I. Kawachi, and J. M. Robins, ``When is baseline adjustment useful in analyses of change? An example with education and cognitive change,'' \textit{Am. J. Epidemiol.}, vol. 162, no. 3, pp. 267--278, Aug. 2005, doi: 10.1093/aje/kwi187.
 \bibitem{teahan2006} O. Teahan \textit{et al.}, ``Impact of analytical bias in metabonomic studies of human blood serum and plasma,'' \textit{Anal. Chem.}, vol. 78, no. 13, pp. 4307--4318, Jul. 2006, doi: 10.1021/ac051972y.
-\bibitem{han2022} W. Han and L. Li, ``Evaluating and minimizing batch effects in metabolomics,'' \textit{Mass Spectrom. Rev.}, vol. 41, no. 3, pp. 421--442, 2022, doi: 10.1002/mas.21672. \todo{Crossref lists 2020 (online first); confirm year}
+\bibitem{han2022} W. Han and L. Li, ``Evaluating and minimizing batch effects in metabolomics,'' \textit{Mass Spectrom. Rev.}, vol. 41, no. 3, pp. 421--442, May 2022, doi: 10.1002/mas.21672.
 \bibitem{adebayo2018} J. Adebayo, J. Gilmer, M. Muelly, I. Goodfellow, M. Hardt, and B. Kim, ``Sanity checks for saliency maps,'' in \textit{Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)}, vol. 31, 2018.
 \bibitem{kumar2020} I. E. Kumar, S. Venkatasubramanian, C. Scheidegger, and S. Friedler, ``Problems with Shapley-value-based explanations as feature importance measures,'' in \textit{Proc. 37th Int. Conf. Mach. Learn. (ICML)}, PMLR vol. 119, 2020, pp. 5491--5500.
 \bibitem{vandersar2015} S. A. van der Sar \textit{et al.}, ``Ethanol contamination of cerebrospinal fluid during standardized sampling and its effect on $^1$H-NMR metabolomics,'' \textit{Anal. Bioanal. Chem.}, vol. 407, no. 16, pp. 4835--4839, Jun. 2015, doi: 10.1007/s00216-015-8663-9.
@@ -805,6 +812,10 @@ of this paper.
 \bibitem{varma2006} S. Varma and R. Simon, ``Bias in error estimation when using cross-validation for model selection,'' \textit{BMC Bioinformatics}, vol. 7, Art. no. 91, 2006, doi: 10.1186/1471-2105-7-91.
 \bibitem{varoquaux2018} G. Varoquaux, ``Cross-validation failure: Small sample sizes lead to large error bars,'' \textit{NeuroImage}, vol. 180, pp. 68--77, 2018, doi: 10.1016/j.neuroimage.2017.06.061.
 \bibitem{broadhurst2006} D. I. Broadhurst and D. B. Kell, ``Statistical strategies for avoiding false discoveries in metabolomics and related experiments,'' \textit{Metabolomics}, vol. 2, no. 4, pp. 171--196, 2006, doi: 10.1007/s11306-006-0037-z.
+\bibitem{engelke2005} U. F. H. Engelke \textit{et al.}, ``Dimethyl sulfone in human cerebrospinal fluid and blood plasma confirmed by one-dimensional $^1$H and two-dimensional $^1$H-$^{13}$C NMR,'' \textit{NMR Biomed.}, vol. 18, no. 5, pp. 331--336, Aug. 2005, doi: 10.1002/nbm.966.
+\bibitem{bridge2026} K. C. Shomwiwat, ``Bridge\_ai\_summit\_nmr\_2026,'' GitHub repository, commits \texttt{17e18df} (Case~4) and \texttt{0088e38} (Case~3), 2026. [Online]. Available: \url{https://github.com/Calvinkub/Bridge_ai_summit_nmr_2026}
+\bibitem{roar2026} C. Orrudee, ``ROAR,'' GitHub repository, commit \texttt{f220cd2} (Case~2), 2026. [Online]. Available: \url{https://github.com/Chaiporn2005/ROAR}
+\bibitem{honest2026} ``mtbls242-forecast-honest,'' code repository, branch \texttt{honest-evaluation}, commit \texttt{637a58e} (Cases~1 and 1b), 2026. \todo{add author and URL once public}
 \bibitem{maltesen2020} R. G. Maltesen, R. Wimmer, and B. S. Rasmussen, ``A longitudinal serum NMR-based metabolomics dataset of ischemia-reperfusion injury in adult cardiac surgery,'' \textit{Sci. Data}, vol. 7, Art. no. 198, 2020, doi: 10.1038/s41597-020-0545-0.
 \end{thebibliography}
 
