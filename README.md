@@ -14,12 +14,13 @@ plus a simulation of when label permutation fails on change-score outcomes.
 
 | Path | Contents |
 |---|---|
-| `paper/` | `main.tex` (IEEEtran), `main.pdf`. Build: `cd paper && tectonic main.tex` |
+| `paper/` | `main.tex` (IEEEtran), `main.pdf`; revised draft `fixpaper.tex`. Build: `cd paper && tectonic fixpaper.tex` |
 | `simulation/` | `sim_pairing_null.py` (36,000 datasets), `summarize.py`, `results/` |
 | `experiments/case1/` | MTBLS242 responder forecast: original, per-marker and joint residualisation |
 | `experiments/case1b_mtbls881/` | Case 1 replication on MTBLS881, with `PREREG.md` written before fitting |
 | `experiments/case2/` | Recursive ROAR, 500-draw random null, spiked-artefact control |
 | `experiments/case3/` | MTBLS1 metadata audit and batch-only classifier |
+| `experiments/case4/` | MTBLS242 label-provenance audit, original-score re-run, grouped vs naive CV |
 | `experiments/refs/` | Reference verification and second-dataset candidates |
 | `figures/` | Figures used in the paper |
 | `data/` | Download instructions only |
@@ -52,8 +53,9 @@ repository (`MTBLS242_forecast/`), which is not part of this repository.
 
 ## Status
 
-Draft. Open items are red `\todo{}` in `paper/main.tex`: repository URL,
-funding, venue-specific AI-use wording. Three references (`han2022`,
-`adebayo2018`, `kumar2020`) need a final check.
+Draft. The revised draft is `paper/fixpaper.tex`; its remaining red `	odo{}`
+marks are listed in `paper/FIXPAPER_TODO.md`: make this repository and the
+`mtbls242-forecast-honest` code (commit `637a58e`) public, and add funding and
+advisors. Venue-specific AI-use wording and page length are still to be decided.
 
 No licence has been chosen yet.

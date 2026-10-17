@@ -1,0 +1,10 @@
+patients: preop 106, 12m 71, both 71, preop only 35
+varying sample-sheet columns: ['14:Sample Name (465 values)', '15:Factor Value[time point] (5 values)', '16:Term Source REF (2 values)', '17:Term Accession Number (2 values)']
+clinical-named columns: {}
+original re-run: ROC-AUC 0.974 +/- 0.020 folds [0.9448, 0.9587, 0.9898, 0.9932, 0.9932]
+original monotonic re-run: PR-AUC 0.9828 +/- 0.015 folds [0.9662, 0.9665, 1.0, 0.9978, 0.9837]
+original_unconstrained|grouped           ROC-AUC 0.9652  PR-AUC 0.9760
+case2_monotonic|grouped                  ROC-AUC 0.9596  PR-AUC 0.9723
+original_unconstrained|naive             ROC-AUC 0.9655  PR-AUC 0.9763
+case2_monotonic|naive                    ROC-AUC 0.9604  PR-AUC 0.9730
+naive CV: share of test samples whose patient is in training = 0.651

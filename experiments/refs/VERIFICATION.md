@@ -45,3 +45,18 @@ MTBLS1 = Salek 2007: CONFIRMED. The MetaboLights record for MTBLS1 ("A metabolom
 | maltesen2020, maltesen2017, rodriguez2011 | dataset papers | see DATASET_CANDIDATES.md |
 
 Gaps (honest): I found no peer-reviewed paper specifically on isopropanol/methanol as sample-handling artefacts in serum NMR metabolomics; the closest verified items are vandersar2015 (ethanol, CSF), pappas1993, and bernini2011. Likewise no published critique specifically of ROAR-vs-contaminants; adebayo2018 and kumar2020 support the general faithfulness-vs-validity point. Fulmer et al. 2010 (Organometallics 29:2176, 10.1021/om100106e) is verified and gives shifts of trace solvents (including isopropanol, methanol) but in organic deuterated solvents, not biofluids; not added to the .tex. Kumar 2020 and Adebayo 2018 were checked for authors/volume only. Not checked: the paper's body-text claims.
+
+## Update 2026-10-18 (fixpaper.tex)
+
+Sources: PubMed E-utilities, Crossref API, NeurIPS and PMLR proceedings pages, GitHub API.
+
+| Key | Status | Notes |
+|---|---|---|
+| han2022 | resolved | Crossref: published online 2020-11-25, print issue vol. 41 no. 3, May 2022. IEEE style cites the issue, so `May 2022` is used and the `\todo` removed. If the venue wants the online date, change it to 2020. |
+| adebayo2018 | content checked | NeurIPS 31 abstract: some saliency methods give maps independent of the model and the data, and "reliance, solely, on visual assessment can be misleading". Supports "attribution methods can mislead even about model behaviour". |
+| kumar2020 | content checked | PMLR 119:5491-5500 abstract: "mathematical problems arise when Shapley values are used for feature importance". Supports the same sentence. |
+| engelke2005 (new) | verified | PubMed 15996001, NMR Biomed 18(5):331-336, Aug 2005, 10.1002/nbm.966, 7 authors (Engelke, Tangerman, Willemsen, Moskau, Loss, Mudd, Wevers). Abstract: DMSO2 "occurs as a regular metabolite at low micromolar concentrations in cerebrospinal fluid and plasma. It derives from dietary sources, from intestinal bacterial metabolism and from human endogenous methanethiol metabolism." Abstract only, not the full text. It does **not** mention MSM supplements, so the draft's "supplements" was dropped, and it names an endogenous route, so the paper now says dimethyl sulfone is the weakest case of the three "putatively exogenous" compounds. He and Slupsky (J Proteome Res 2014, microbial-mammalian co-metabolism of DMSO2) was searched for but not found by the search tool, so it is not cited. |
+| bridge2026 (new) | verified | `Calvinkub/Bridge_ai_summit_nmr_2026` is public; commits `17e18df` (2026-07-14, obesity notebook, ROC-AUC 0.973) and `0088e38` (2026-08-09, Case 3 notebook) resolve through the GitHub API. Author given as K. C. Shomwiwat from the account name; confirm. |
+| roar2026 (new) | verified | `Chaiporn2005/ROAR` is public; `main` = `f220cd2`, contains `src/data.py`, `src/model.py` used by Case 2. Case 2 did not record which ROAR commit it copied from, so `f220cd2` is the current head, not a confirmed source commit. |
+| honest2026 (new) | NOT public | Commit `637a58e` (`honest-evaluation`) is not in `Chaiporn2005/Forecast` (GitHub API: "No commit found") and no repo named `mtbls242-forecast-honest` exists under either account. The public `Forecast` main lacks `controls.py` and `monotone_logistic.py`, so Cases 1/1b cannot be reproduced from public code yet. |
+| validated-yet-wrong | NOT public | `https://github.com/Calvinkub/validated-yet-wrong` returns 404 to an unauthenticated request on 2026-10-18; the paper's footnote and availability statement point to it. |

@@ -1,0 +1,151 @@
+{
+  "audit": {
+    "samples_per_time_point": {
+      "12 months after surgery": 71,
+      "3 months after surgery": 98,
+      "6 months after surgery": 98,
+      "9 months after surgery": 92,
+      "preop": 106
+    },
+    "sample_names_not_matching_pid_regex": [
+      "2_0242_2"
+    ],
+    "patients_preop": 106,
+    "patients_12m": 71,
+    "patients_in_both_classes": 71,
+    "patients_12m_without_preop": 0,
+    "patients_preop_only": 35,
+    "sample_sheet_columns": 18,
+    "varying_columns": [
+      "14:Sample Name (465 values)",
+      "15:Factor Value[time point] (5 values)",
+      "16:Term Source REF (2 values)",
+      "17:Term Accession Number (2 values)"
+    ],
+    "columns_with_clinical_names": {},
+    "maf_features": [
+      "(R)-3-Hydroxybutyric acid",
+      "acetate",
+      "acetoacetate",
+      "L-alanine",
+      "L-valine",
+      "hypoxanthine",
+      "citrate",
+      "creatinine",
+      "L-glutamine",
+      "glycine",
+      "histidine",
+      "L-allo-Isoleucine",
+      "isopropanol",
+      "L-Lactic acid",
+      "L-leucine",
+      "lipoproteins",
+      "methanol",
+      "Dimethyl sulfone",
+      "D-phenylalanine",
+      "Pyruvic acid",
+      "L-tyrosine"
+    ]
+  },
+  "original": {
+    "source": "Bridge_ai_summit_nmr_2026@17e18df exp_obesity_nmr_mtbls242.ipynb",
+    "reported": {
+      "roc_auc_mean_curve": 0.973,
+      "sd_folds": 0.02,
+      "fold_auc": [
+        0.9416,
+        0.9619,
+        0.9932,
+        0.9864,
+        0.9932
+      ]
+    },
+    "rerun": {
+      "roc_auc_mean_curve": 0.973697491787944,
+      "sd_folds": 0.02026409841212928,
+      "fold_auc": [
+        0.9448,
+        0.9587,
+        0.9898,
+        0.9932,
+        0.9932
+      ],
+      "mean_fold_auc": 0.975945165945166
+    },
+    "note": "sample order here is MAF column order; the notebook read a separately parsed .npz, so fold membership can differ"
+  },
+  "original_monotonic": {
+    "source": "Bridge_ai_summit_nmr_2026@0088e38 (= cb27e89) exp_obesity_nmr_mtbls242.ipynb",
+    "reported": {
+      "pr_auc_mean_folds": 0.984,
+      "sd_folds": 0.014,
+      "fold_pr_auc": [
+        0.9676,
+        0.9664,
+        0.994,
+        0.9978,
+        0.9918
+      ]
+    },
+    "rerun": {
+      "pr_auc_mean_folds": 0.982827145978306,
+      "sd_folds": 0.014606973809408175,
+      "fold_pr_auc": [
+        0.9662,
+        0.9665,
+        1.0,
+        0.9978,
+        0.9837
+      ]
+    }
+  },
+  "cv": {
+    "original_unconstrained|grouped": {
+      "roc_auc": 0.96517377860235,
+      "roc_auc_sd_folds": 0.024936193818866935,
+      "pr_auc": 0.9760051298582063,
+      "pr_auc_sd_folds": 0.01896835051998354,
+      "n_folds": 50
+    },
+    "case2_monotonic|grouped": {
+      "roc_auc": 0.9596376004947433,
+      "roc_auc_sd_folds": 0.027926930039716837,
+      "pr_auc": 0.9723199417538494,
+      "pr_auc_sd_folds": 0.020950579136178524,
+      "n_folds": 50
+    },
+    "naive_share_test_with_patient_in_train": 0.6508888888888889,
+    "original_unconstrained|naive": {
+      "roc_auc": 0.9654667078952793,
+      "roc_auc_sd_folds": 0.032727796916084954,
+      "pr_auc": 0.9763129510544956,
+      "pr_auc_sd_folds": 0.023226485866710278,
+      "n_folds": 50
+    },
+    "case2_monotonic|naive": {
+      "roc_auc": 0.9603807462378892,
+      "roc_auc_sd_folds": 0.03407617116428042,
+      "pr_auc": 0.9730140648012204,
+      "pr_auc_sd_folds": 0.024099167478681103,
+      "n_folds": 50
+    }
+  },
+  "setup": {
+    "n_samples": 177,
+    "n_preop_label1": 106,
+    "n_features": 21,
+    "transform": "log1p",
+    "cv": "10 x 5-fold, seeds 42,142,242,342,442,542,642,742,842,942; grouped = StratifiedGroupKFold on patient id, naive = StratifiedKFold; folds identical to Case 2; model seed = repeat_seed*100+fold",
+    "data_sha256": {
+      "m_MTBLS242_v2_maf.tsv": "ac8828014a93ae197a3f6936d9b544bf90967825290508b32bfd4e8e2a1b3bfc",
+      "s_MTBLS242.txt": "4ff5853cb7ec4f6c51ea1c2fc60be269f00520cb41b8736ea1c41f407b3306d3"
+    },
+    "versions": {
+      "python": "3.11.4",
+      "numpy": "2.4.6",
+      "sklearn": "1.9.1",
+      "xgboost": "3.2.0",
+      "platform": "Windows-10-10.0.19045-SP0"
+    }
+  }
+}
