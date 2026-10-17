@@ -14,7 +14,7 @@ plus a simulation of when label permutation fails on change-score outcomes.
 
 | Path | Contents |
 |---|---|
-| `paper/` | `main.tex` (IEEEtran), `main.pdf`. Build: `cd paper && tectonic main.tex` |
+| `paper/` | `main.tex` (IEEEtran, the revised draft; earlier version in git history), `main.pdf`. Build: `cd paper && tectonic main.tex` |
 | `simulation/` | `sim_pairing_null.py` (36,000 datasets), `summarize.py`, `results/` |
 | `experiments/case1/` | MTBLS242 responder forecast: original, per-marker and joint residualisation |
 | `experiments/case1b_mtbls881/` | Case 1 replication on MTBLS881, with `PREREG.md` written before fitting |
@@ -52,8 +52,8 @@ repository (`MTBLS242_forecast/`), which is not part of this repository.
 
 ## Status
 
-Draft. Open items are red `\todo{}` in `paper/main.tex`: repository URL,
-funding, venue-specific AI-use wording. Three references (`han2022`,
-`adebayo2018`, `kumar2020`) need a final check.
+Draft with no open `\todo{}` items. Before submission: check page limit (9 pages now), the
+`adebayo2018` and `kumar2020` references (verified for authors and venue only), and the target
+venue's AI-use wording.
 
 No licence has been chosen yet.

@@ -1,4 +1,7 @@
-# สิ่งที่ต้องเติมใน `fixpaper.tex`
+# ประวัติรายการที่ต้องเติม (เดิมของ `fixpaper.tex`, ตอนนี้คือ `main.tex`)
+
+> 2026-10-18: `fixpaper.tex` ถูกเปลี่ยนชื่อเป็น `paper/main.tex` (ฉบับเดิมก่อนแก้อยู่ใน git history ที่ commit 8074bae) Acknowledgment เติมแล้ว: ขอบคุณ ผศ.ดร. นนท์ คนึงสุขเกษม ในฐานะอาจารย์ที่ปรึกษา และไม่มีแหล่งทุน ไม่มี `\todo{}` เหลือ
+
 
 `fixpaper.tex` เป็นฉบับแก้ของ `main.tex` ตามผลรีวิว (ฉบับเดิมยังอยู่ ไม่ได้แก้)
 ตัวเลขที่เปลี่ยนใหม่ตรวจเทียบกับ `RESULTS.md`, `summary_pr_auc.json` และ
@@ -24,7 +27,7 @@ Done in `fixpaper.tex`:
 - Item 5: `han2022` year is 2022 (Crossref print issue May 2022; 2020 is online-first). Todo removed.
 
 Still open:
-- Item 4, Acknowledgment: needs funding and advisor names from the authors.
+- Item 4, Acknowledgment: done (advisor Asst. Prof. Dr. Nont Kanungsukkasem; no funding).
 - Visibility: done 2026-10-18. `Calvinkub/validated-yet-wrong` and `Calvinkub/mtbls242-forecast-honest`
   are public (unauthenticated requests return 200, including the commit `637a58e` and tag `paper-v1`).
 
