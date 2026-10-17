@@ -20,13 +20,13 @@ Done in `fixpaper.tex`:
   a regular plasma metabolite from diet, gut bacteria and endogenous methanethiol metabolism).
   "Supplements" was dropped because that source does not mention them.
 - Item 3: the three earlier repositories are cited with commits (`637a58e`, `f220cd2`, `0088e38`).
-  `637a58e` IS on GitHub (private repo, verified with `git ls-remote`); the 404 is because the repo is private.
+  `637a58e` was already on GitHub; the earlier 404 was only because the repo was private. Now public.
 - Item 5: `han2022` year is 2022 (Crossref print issue May 2022; 2020 is online-first). Todo removed.
 
 Still open:
 - Item 4, Acknowledgment: needs funding and advisor names from the authors.
-- Visibility: `Calvinkub/validated-yet-wrong` and `Calvinkub/mtbls242-forecast-honest` are private. The
-  paper's footnote and citations point at both, so both must be public before submission.
+- Visibility: done 2026-10-18. `Calvinkub/validated-yet-wrong` and `Calvinkub/mtbls242-forecast-honest`
+  are public (unauthenticated requests return 200, including the commit `637a58e` and tag `paper-v1`).
 
 ## ต้องทำก่อนส่ง (กระทบเนื้อหา)
 
