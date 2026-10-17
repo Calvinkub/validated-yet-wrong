@@ -1,0 +1,50 @@
+{
+  "facts": {
+    "samples": 177,
+    "preop": 106,
+    "month12": 71,
+    "patients_preop": 106,
+    "patients_12m": 71,
+    "patients_in_both_classes": 71,
+    "share_of_samples_from_both_class_patients": 0.8022598870056498
+  },
+  "grouped": {
+    "roc_auc_mean_over_folds": 0.9602053184910327,
+    "roc_auc_sd_repeat_means": 0.005745837550866879,
+    "pr_auc_mean_over_folds": 0.972812615454236,
+    "pr_auc_sd_repeat_means": 0.004142978230834824,
+    "pooled_oof_roc_auc_mean": 0.9593010895562053,
+    "n_outer_folds": 50
+  },
+  "naive": {
+    "roc_auc_mean_over_folds": 0.958653885796743,
+    "roc_auc_sd_repeat_means": 0.008878901689647976,
+    "pr_auc_mean_over_folds": 0.9719330731483137,
+    "pr_auc_sd_repeat_means": 0.00650532698556596,
+    "pooled_oof_roc_auc_mean": 0.9584639914961468,
+    "n_outer_folds": 50
+  },
+  "single_seed_42_naive_5fold": {
+    "mean_fold_roc_auc": 0.9693094207379922,
+    "sd_folds": 0.0221835434297105
+  },
+  "versions": {
+    "xgboost": "3.2.0",
+    "sklearn": "1.9.0",
+    "numpy": "2.4.6"
+  },
+  "repeat_seeds": [
+    42,
+    142,
+    242,
+    342,
+    442,
+    542,
+    642,
+    742,
+    842,
+    942
+  ],
+  "n_splits": 5,
+  "seconds": 3.4
+}

@@ -9,6 +9,25 @@
 
 Build: `cd paper && tectonic fixpaper.tex`
 
+## Status 2026-10-18 (update after the first pass)
+
+Done in `fixpaper.tex`:
+- Item 1: added `experiments/case4/` (script, seed, command, `RESULTS.md`). Measured over 10 repeats:
+  ROC-AUC 0.960 grouped vs 0.959 naive, PR-AUC 0.973 vs 0.972. The old 0.969/0.970 and the poster's
+  0.973 do not reproduce (single-seed 5-fold gives 0.969); Table I and the Case 4 text now use the
+  measured numbers and say so.
+- Item 2: dimethyl sulfone now cites Engelke et al. 2005 (NMR Biomed 18:331-336, verified on Crossref:
+  a regular plasma metabolite from diet, gut bacteria and endogenous methanethiol metabolism).
+  "Supplements" was dropped because that source does not mention them.
+- Item 3: the three earlier repositories are cited with commits (`637a58e`, `f220cd2`, `0088e38`).
+  `637a58e` IS on GitHub (private repo, verified with `git ls-remote`); the 404 is because the repo is private.
+- Item 5: `han2022` year is 2022 (Crossref print issue May 2022; 2020 is online-first). Todo removed.
+
+Still open:
+- Item 4, Acknowledgment: needs funding and advisor names from the authors.
+- Visibility: `Calvinkub/validated-yet-wrong` and `Calvinkub/mtbls242-forecast-honest` are private. The
+  paper's footnote and citations point at both, so both must be public before submission.
+
 ## ต้องทำก่อนส่ง (กระทบเนื้อหา)
 
 ### 1. Case 4: ตัวเลข AUC ยังไม่มีที่มา (บรรทัด 230 และ 571)

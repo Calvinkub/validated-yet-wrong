@@ -97,9 +97,7 @@ and still be wrong.
 
 The four analyses we examine are our own earlier work: a responder forecast
 and a feature-attribution study on MTBLS242, and a diabetes classifier on
-MTBLS1 \todo{cite or link the three earlier repositories:
-\texttt{mtbls242-forecast-honest}, the ROAR repository, and
-\texttt{Calvinkub/Bridge\_ai\_summit\_nmr\_2026}}. Each passed the checks we
+MTBLS1 \cite{repo_forecast, repo_roar, repo_bridge}. Each passed the checks we
 had applied at the time. This paper makes four contributions:
 \begin{enumerate}
   \item A taxonomy of four failure modes, each paired with the standard check
@@ -227,7 +225,7 @@ Case & Failure mode & Data & Reported result & Standard check passed & Exposing 
 1 & Outcome manufactured from features & MTBLS242 & PR-AUC 0.683 & Label permutation (refit), $p=0.001$ & Learn-nothing baseline; joint residualisation \\
 2 & Putative contaminants ranked with biology & MTBLS242 & PR-AUC 0.973 & ROAR faithfulness & Known-artefact positive control \\
 3 & Collection protocol equals label & MTBLS1 & PR-AUC 0.976 & Subject-grouped CV & Metadata and protocol audit \\
-4 & Label name $\neq$ label meaning & MTBLS242 & ROC-AUC 0.973\todo{provenance} & Subject-grouped CV & Label-provenance audit \\
+4 & Label name $\neq$ label meaning & MTBLS242 & ROC-AUC 0.960 & Subject-grouped CV & Label-provenance audit \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -434,9 +432,10 @@ matter to the model. That is true. But isopropanol and methanol are not
 expected products of human metabolism at these levels; isopropanol is used
 for skin preparation, and both can enter samples during collection and
 handling \cite{bernini2011, vandersar2015}. Dimethyl sulfone is less clear:
-it can come from diet, supplements or gut microbial metabolism, any of which
-may change after bariatric surgery \todo{cite a source for dietary and
-microbial origins of dimethyl sulfone}. We therefore call the three compounds
+it is a regular low-micromolar plasma metabolite that derives from dietary
+sources, intestinal bacterial metabolism and endogenous methanethiol
+metabolism \cite{engelke2005}, all of which could differ between a
+preoperative and a postoperative state. We therefore call the three compounds
 \emph{putatively exogenous}. Their identity as handling artefacts is not
 established from the deposited data, and the argument below does not depend
 on it.
@@ -567,10 +566,14 @@ Total   &                    & 54 & 78 & 132 & 40--42 \\
 \label{sec:case4}
 Our ``obese vs.\ non-obese'' task on MTBLS242 is in fact ``preoperative vs.\
 twelve months after surgery'': \verified{71} of \verified{106} patients
-appear in both classes. Subject-grouped CV (ROC-AUC 0.969) and naive CV
-(0.970) agree \todo{add the script, seed and command for these two values
-and for the 0.973 in Table~\ref{tab:taxonomy}, or remove them}, so the issue
-is not leakage but label meaning. The sample sheet records no body-mass
+appear in both classes, and they supply \verified{80\%} of the 177 samples.
+Over 10 repeats of 5-fold CV, patient-grouped CV gives ROC-AUC
+\verified{0.960} and naive CV \verified{0.959} (PR-AUC \verified{0.973} and
+\verified{0.972}); the spread between repeats is about \verified{0.006--0.009}.
+The two agree, so the issue is not leakage but label meaning. (A single-seed
+5-fold ROC-AUC of 0.973 appears in our earlier poster; it does not reproduce
+with the constrained model used here, which gives \verified{0.969} under that
+protocol.) The sample sheet records no body-mass
 index, so whether any twelve-month patient is in fact non-obese cannot be
 checked; a year after bariatric surgery many patients need not be.
 
@@ -765,8 +768,11 @@ simulation runs with \texttt{python simulation/sim\_pairing\_null.py} and
 takes about 11 minutes on 8 cores; \texttt{--check} runs the pure-noise
 sanity test. Cases~1 and 1b import the outcome, model and control code from
 our earlier \texttt{mtbls242-forecast-honest} repository, which must be
-obtained separately \todo{public URL and commit
-\texttt{637a58e} of \texttt{mtbls242-forecast-honest}}.
+obtained separately \cite{repo_forecast} (branch
+\texttt{honest-evaluation}, commit \texttt{637a58e}). The ROAR study
+\cite{repo_roar} (commit \texttt{f220cd2}) and the MTBLS1 notebook
+\cite{repo_bridge} (commit \texttt{0088e38}) are the sources of Cases~2
+and 3.
 
 \section*{Acknowledgment}
 \todo{Funding, advisors.}
@@ -796,7 +802,11 @@ of this paper.
 \bibitem{vickers2001} A. J. Vickers and D. G. Altman, ``Analysing controlled trials with baseline and follow up measurements,'' \textit{BMJ}, vol. 323, no. 7321, pp. 1123--1124, 2001, doi: 10.1136/bmj.323.7321.1123.
 \bibitem{glymour2005} M. M. Glymour, J. Weuve, L. F. Berkman, I. Kawachi, and J. M. Robins, ``When is baseline adjustment useful in analyses of change? An example with education and cognitive change,'' \textit{Am. J. Epidemiol.}, vol. 162, no. 3, pp. 267--278, Aug. 2005, doi: 10.1093/aje/kwi187.
 \bibitem{teahan2006} O. Teahan \textit{et al.}, ``Impact of analytical bias in metabonomic studies of human blood serum and plasma,'' \textit{Anal. Chem.}, vol. 78, no. 13, pp. 4307--4318, Jul. 2006, doi: 10.1021/ac051972y.
-\bibitem{han2022} W. Han and L. Li, ``Evaluating and minimizing batch effects in metabolomics,'' \textit{Mass Spectrom. Rev.}, vol. 41, no. 3, pp. 421--442, 2022, doi: 10.1002/mas.21672. \todo{Crossref lists 2020 (online first); confirm year}
+\bibitem{repo_forecast} K. C. Shomwiwat, ``mtbls242-forecast-honest: corrected MTBLS242 forecast code and controls,'' GitHub, branch honest-evaluation, commit 637a58e, 2026. [Online]. Available: \url{https://github.com/Calvinkub/mtbls242-forecast-honest}
+\bibitem{repo_roar} C. Orrudee, ``ROAR: remove-and-retrain analysis on MTBLS242,'' GitHub, commit f220cd2, 2026. [Online]. Available: \url{https://github.com/Chaiporn2005/ROAR}
+\bibitem{repo_bridge} K. C. Shomwiwat, ``Bridge\_ai\_summit\_nmr\_2026: metabolic screening experiments,'' GitHub, commit 0088e38, 2026. [Online]. Available: \url{https://github.com/Calvinkub/Bridge_ai_summit_nmr_2026}
+\bibitem{engelke2005} U. F. H. Engelke, A. Tangerman, M. A. A. P. Willemsen, D. Moskau, S. Loss, S. H. Mudd, and R. A. Wevers, ``Dimethyl sulfone in human cerebrospinal fluid and blood plasma confirmed by one-dimensional $^1$H and two-dimensional $^1$H--$^{13}$C NMR,'' \textit{NMR Biomed.}, vol. 18, no. 5, pp. 331--336, 2005, doi: 10.1002/nbm.966.
+\bibitem{han2022} W. Han and L. Li, ``Evaluating and minimizing batch effects in metabolomics,'' \textit{Mass Spectrom. Rev.}, vol. 41, no. 3, pp. 421--442, 2022, doi: 10.1002/mas.21672.
 \bibitem{adebayo2018} J. Adebayo, J. Gilmer, M. Muelly, I. Goodfellow, M. Hardt, and B. Kim, ``Sanity checks for saliency maps,'' in \textit{Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)}, vol. 31, 2018.
 \bibitem{kumar2020} I. E. Kumar, S. Venkatasubramanian, C. Scheidegger, and S. Friedler, ``Problems with Shapley-value-based explanations as feature importance measures,'' in \textit{Proc. 37th Int. Conf. Mach. Learn. (ICML)}, PMLR vol. 119, 2020, pp. 5491--5500.
 \bibitem{vandersar2015} S. A. van der Sar \textit{et al.}, ``Ethanol contamination of cerebrospinal fluid during standardized sampling and its effect on $^1$H-NMR metabolomics,'' \textit{Anal. Bioanal. Chem.}, vol. 407, no. 16, pp. 4835--4839, Jun. 2015, doi: 10.1007/s00216-015-8663-9.
