@@ -237,7 +237,15 @@ Case & Failure mode & Data & Reported result & Standard check passed & Exposing 
 \subsection{Setup}
 Task: predict from the preoperative profile whether a patient is a
 twelve-month ``strong responder,'' defined as $\geq$9 of 11 markers changing
-in the expected direction. 71 paired patients, 31 responders.
+in the expected direction. 71 paired patients, 31 responders. The 11 markers
+and their expected directions were fixed from the obesity and insulin-resistance
+literature \cite{newgard2009, wang2011}, not from these data: expected higher in
+obesity are L-valine, L-leucine, L-allo-isoleucine, L-tyrosine,
+D-phenylalanine, L-alanine, lipoproteins and lactate; expected lower are
+glycine, L-glutamine and histidine. The other ten of the 21 metabolites carry no
+direction. Three of them (isopropanol, methanol, dimethyl sulfone) are the
+putatively exogenous compounds of Case~2, dropped in the corrected designs
+(18 features remain).
 
 \subsection{Why the standard check passes}
 Baseline $x_0$ is both the predictor and a term in the outcome
@@ -441,7 +449,8 @@ established from the deposited data, and the argument below does not depend
 on it.
 
 \subsection{Exposing control: artefact vs.\ biology}
-At $k=3$, removing the putatively exogenous trio gives PR-AUC
+At $k=3$, removing the putatively exogenous trio (dimethyl sulfone,
+isopropanol, methanol) gives PR-AUC
 \verified{0.954} (null percentile \verified{0.2}); removing three endogenous
 markers (lipoproteins, L-valine, L-tyrosine) gives \verified{0.959}
 (percentile \verified{1.2}). The \verified{0.006} gap is far smaller than the
@@ -779,11 +788,6 @@ The authors thank Asst.\ Prof.\ Dr.\ Nont Kanungsukkasem, School of
 Information Technology, King Mongkut's Institute of Technology Ladkrabang, for
 advising this work. This research received no specific funding.
 
-\section*{Use of Generative AI}
-The authors used Claude (Anthropic) to assist with analysis code, the
-simulation, and drafting text. The authors are responsible for the content
-of this paper.
-
 % ===========================================================================
 \begin{thebibliography}{00}
 \bibitem{mtbls242} EMBL-EBI, ``MetaboLights study MTBLS242: Metabolomic fingerprint of severe obesity is dynamically affected by bariatric surgery in a procedure-dependent manner,'' dataset. [Online]. Available: \url{https://www.ebi.ac.uk/metabolights/MTBLS242}
@@ -818,6 +822,8 @@ of this paper.
 \bibitem{varoquaux2018} G. Varoquaux, ``Cross-validation failure: Small sample sizes lead to large error bars,'' \textit{NeuroImage}, vol. 180, pp. 68--77, 2018, doi: 10.1016/j.neuroimage.2017.06.061.
 \bibitem{broadhurst2006} D. I. Broadhurst and D. B. Kell, ``Statistical strategies for avoiding false discoveries in metabolomics and related experiments,'' \textit{Metabolomics}, vol. 2, no. 4, pp. 171--196, 2006, doi: 10.1007/s11306-006-0037-z.
 \bibitem{maltesen2020} R. G. Maltesen, R. Wimmer, and B. S. Rasmussen, ``A longitudinal serum NMR-based metabolomics dataset of ischemia-reperfusion injury in adult cardiac surgery,'' \textit{Sci. Data}, vol. 7, Art. no. 198, 2020, doi: 10.1038/s41597-020-0545-0.
+\bibitem{newgard2009} C. B. Newgard \textit{et al.}, ``A branched-chain amino acid-related metabolic signature that differentiates obese and lean humans and contributes to insulin resistance,'' \textit{Cell Metab.}, vol. 9, no. 4, pp. 311--326, Apr. 2009, doi: 10.1016/j.cmet.2009.02.002.
+\bibitem{wang2011} T. J. Wang \textit{et al.}, ``Metabolite profiles and the risk of developing diabetes,'' \textit{Nat. Med.}, vol. 17, no. 4, pp. 448--453, Apr. 2011, doi: 10.1038/nm.2307.
 \end{thebibliography}
 
 \end{document}
