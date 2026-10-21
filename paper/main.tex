@@ -430,6 +430,49 @@ retrain (recursive ROAR), and the random null uses 500 distinct draws per $k$
 (exhaustive for $k\leq 2$) under the same folds as the informed runs.
 Grouped baseline PR-AUC is \verified{0.973}; ungrouped CV gives
 \verified{0.972}.
+Table~\ref{tab:features} lists all 21 features, the two trios compared below
+and the order in which recursive ROAR removes them.
+
+\begin{table}[t]
+\centering
+\caption{The 21 MTBLS242 metabolites. Group: the two trios compared in
+Fig.~\ref{fig:case2}. Direction: expected change in obesity used as a
+monotonic constraint (+ higher, $-$ lower, blank = unconstrained).
+Step: position in the recursive ROAR removal order; blank = not removed by
+$k=11$. Dimethyl sulfone, isopropanol and valine are the first three removed,
+so the red curve at $k=3$ is not the same set as either trio.}
+\label{tab:features}
+\footnotesize
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Metabolite & Group & Dir. & Step \\
+\midrule
+Dimethyl sulfone      & Contaminant & & 1 \\
+Isopropanol           & Contaminant & & 2 \\
+Methanol              & Contaminant & & 5 \\
+\midrule
+L-Valine              & Biology & $+$ & 3 \\
+L-Tyrosine            & Biology & $+$ & 6 \\
+Lipoproteins          & Biology & $+$ & 8 \\
+\midrule
+Glycine               & & $-$ & 4 \\
+D-Phenylalanine       & & $+$ & 7 \\
+Pyruvic acid          & & & 9 \\
+L-allo-Isoleucine     & & $+$ & 10 \\
+L-Leucine             & & $+$ & 11 \\
+L-Alanine             & & $+$ & \\
+L-Lactic acid         & & $+$ & \\
+L-Glutamine           & & $-$ & \\
+Histidine             & & $-$ & \\
+3-Hydroxybutyrate     & & & \\
+Acetate               & & & \\
+Acetoacetate          & & & \\
+Citrate               & & & \\
+Creatinine            & & & \\
+Hypoxanthine          & & & \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Why the standard check passes}
 Recursive ROAR removes, in order, dimethyl sulfone, isopropanol, L-valine,
