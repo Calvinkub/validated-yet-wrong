@@ -67,7 +67,7 @@ async function icon(name, hex) {
 const NAMES = ["FaVial", "FaFlask", "FaMicroscope", "FaRobot", "FaShieldAlt", "FaCheckCircle", "FaExclamationTriangle", "FaSyncAlt",
   "FaTags", "FaBarcode", "FaQuestionCircle", "FaChartLine", "FaDatabase", "FaHeartbeat", "FaTint", "FaLayerGroup", "FaSearch",
   "FaBalanceScale", "FaRandom", "FaTable", "FaGithub", "FaCut", "FaArrowRight", "FaWeight", "FaCalculator", "FaLightbulb",
-  "FaUsers", "FaTimesCircle", "FaFileAlt", "FaProjectDiagram", "FaStethoscope", "FaCapsules", "FaUserMd", "FaBrain", "FaHospital", "FaBug"];
+  "FaUsers", "FaTimesCircle", "FaFileAlt", "FaProjectDiagram", "FaStethoscope", "FaCapsules", "FaUserMd", "FaBrain", "FaHospital", "FaBug", "FaAppleAlt", "FaChartBar"];
 const COLORS = [INK, BLUE, ORANGE, AQUA, ORANGE_TXT, WHITE, GRAY, MUTED, VIOLET];
 const IC = {};
 async function loadIcons() {
@@ -108,6 +108,11 @@ function chartCommon(extra) {
 
 async function main() {
   await loadIcons();
+
+  const chip = (s, x, y, w, text, color, bg) => {
+    s.addShape(pres.ShapeType.roundRect, { x, y, w, h: 0.4, fill: { color: bg }, line: { color: bg, width: 0 }, rectRadius: 0.2, objectName: "Chip" });
+    s.addText(text, { x, y, w, h: 0.4, fontFace: FONT, fontSize: 12, bold: true, color, align: "center", valign: "middle", margin: 0, isTextBox: true });
+  };
 
   // =============== 1. Title ===============
   {
@@ -158,6 +163,64 @@ async function main() {
     card(s, M, 5.05, CW, 1.35, "Question card");
     badge(s, M + 0.3, 5.3, 0.85, "FaQuestionCircle", ORANGE, ORANGE_BG, "Question");
     s.addText("คำถามของเรา: ถ้าผ่านทุกการตรวจแล้ว ผลนั้นถูกต้องจริงหรือเปล่า? เราพบว่า ในสี่กรณี คำตอบคือ \"ไม่\"", { x: M + 1.4, y: 5.1, w: CW - 1.7, h: 1.25, fontFace: FONT, fontSize: 19, bold: true, color: INK, margin: 0, isTextBox: true, valign: "middle" });
+  }
+
+  // =============== 2b. What is a metabolite ===============
+  {
+    const s = content("พื้นฐาน  |  metabolite คืออะไร", "FaTint", BLUE, "Metabolite คือสารเล็ก ๆ ในเลือดที่เปลี่ยนไปตามสุขภาพ",
+      "เมตาโบไลต์ (metabolite) คือสารโมเลกุลเล็กที่เกิดจากการเผาผลาญ อยู่ในเลือดหรือปัสสาวะ มาจากอาหาร ยา และกระบวนการในร่างกาย ปริมาณของมันจึงเปลี่ยนไปตามสุขภาพ เช่น กรดอะมิโน valine, glycine, กรดแลกติก และไขมันในเลือด (lipoproteins) แต่ตัวอย่างยังรับสารจากภายนอกได้ด้วย เช่น น้ำยาทำความสะอาดผิวก่อนเจาะเลือด (isopropanol) สารกลุ่มนี้จะกลายเป็นตัวละครสำคัญในกรณีที่ 2 (~0:40)",
+      "ตัวอย่างสารทั้งหมดมาจากตาราง MTBLS242 (21 ตัว). ที่มาของ dimethyl sulfone: อาหาร แบคทีเรียในลำไส้ หรือการเผาผลาญเอง (Engelke 2005) จึงเรียกว่า \"น่าจะมาจากภายนอก\" ไม่ใช่ยืนยันแล้ว");
+    const src = [["FaAppleAlt", BLUE, BLUE_BG, "อาหาร"], ["FaCapsules", BLUE, BLUE_BG, "ยา"], ["FaHeartbeat", BLUE, BLUE_BG, "การเผาผลาญในร่างกาย"], ["FaFlask", ORANGE, ORANGE_BG, "สิ่งปนเข้ามาตอนเก็บตัวอย่าง"]];
+    src.forEach((r, i) => {
+      const y = 2.05 + i * 0.95;
+      badge(s, M, y, 0.7, r[0], r[1], r[2], "Source");
+      s.addText(r[3], { x: M + 0.85, y, w: 2.9, h: 0.7, fontFace: FONT, fontSize: 15, color: INK, margin: 0, isTextBox: true, valign: "middle" });
+      arrow(s, M + 3.65, y + 0.17, 0.36);
+    });
+    s.addShape(pres.ShapeType.ellipse, { x: 4.75, y: 2.45, w: 2.3, h: 2.3, fill: { color: BLUE_BG }, line: { color: BLUE, width: 1.5 }, objectName: "Blood circle" });
+    s.addImage({ data: ic("FaTint", BLUE), x: 5.45, y: 2.75, w: 0.9, h: 0.9, altText: "blood drop", objectName: "Blood icon" });
+    s.addText("เลือด / ปัสสาวะ", { x: 4.75, y: 3.75, w: 2.3, h: 0.6, fontFace: FONT, fontSize: 15, bold: true, color: INK, align: "center", margin: 0, isTextBox: true, valign: "middle" });
+    arrow(s, 7.25, 3.4, 0.4);
+    card(s, 7.9, 2.05, 4.8, 3.65, "Metabolite card");
+    s.addText("สารที่วัดได้ในข้อมูลของเรา (21 ตัว)", { x: 8.15, y: 2.2, w: 4.4, h: 0.4, fontFace: FONT, fontSize: 14, bold: true, color: INK, margin: 0, isTextBox: true });
+    const row = (y, items, color, bg) => { let x = 8.15; items.forEach(([t, w]) => { chip(s, x, y, w, t, color, bg); x += w + 0.12; }); };
+    s.addText("สารในร่างกาย", { x: 8.15, y: 2.7, w: 4.4, h: 0.3, fontFace: FONT, fontSize: 12, color: MUTED, margin: 0, isTextBox: true });
+    row(3.05, [["L-valine", 1.1], ["glycine", 1.0], ["lactic acid", 1.2]], BLUE, BLUE_BG);
+    row(3.55, [["lipoproteins", 1.4], ["creatinine", 1.25], ["citrate", 0.95]], BLUE, BLUE_BG);
+    s.addText("น่าจะมาจากภายนอก (ดูกรณีที่ 2)", { x: 8.15, y: 4.2, w: 4.4, h: 0.3, fontFace: FONT, fontSize: 12, color: ORANGE_TXT, margin: 0, isTextBox: true });
+    row(4.55, [["isopropanol", 1.3], ["methanol", 1.15]], ORANGE_TXT, ORANGE_BG);
+    row(5.05, [["dimethyl sulfone", 1.9]], ORANGE_TXT, ORANGE_BG);
+    card(s, M, 5.95, CW, 0.6, "Takeaway");
+    s.addText("ปริมาณของสารแต่ละตัว = ตัวเลข 1 ค่า ต่อ 1 ตัวอย่าง จึงเอาไปเข้าโมเดลได้", { x: M + 0.3, y: 5.95, w: CW - 0.6, h: 0.6, fontFace: FONT, fontSize: 15, bold: true, color: INK, margin: 0, isTextBox: true, valign: "middle" });
+  }
+
+  // =============== 2c. What the data looks like ===============
+  {
+    const snip = JSON.parse(fs.readFileSync(path.join(__dirname, "assets/table_snippet.json"), "utf8"));
+    const s = content("พื้นฐาน  |  ข้อมูลหน้าตาเป็นอย่างไร", "FaTable", BLUE, "จากหลอดเลือด เป็นตารางตัวเลขที่โมเดลเห็น",
+      "เครื่อง NMR วัดสารแต่ละตัวเป็นยอด (peak) ความสูงของยอดบอกปริมาณ ภาพซ้ายเป็นภาพประกอบ ไม่ใช่ข้อมูลจริง ส่วนตารางขวาเป็นตัวเลขจริงจากไฟล์ MTBLS242 ของผู้ป่วยสองคน คนละสองตัวอย่าง คือก่อนผ่าตัดและหลังผ่าตัด 12 เดือน โมเดลเห็นเพียงตารางนี้: หนึ่งแถวคือหนึ่งตัวอย่าง หนึ่งคอลัมน์คือสารหนึ่งชนิด และมีอีกคอลัมน์ที่บอกว่าตัวอย่างนั้นก่อนหรือหลังผ่าตัด ซึ่งก็คือ label ที่โมเดลต้องทำนาย (~0:40)",
+      "ตารางขวา: ค่าจริงจาก m_MTBLS242_v2_maf.tsv (smallmolecule_abundance, หน่วยตามไฟล์ MetaboLights). ภาพซ้าย: สเปกตรัมสมมติ สร้างโดย presentation/assets/make_spectrum.py");
+    s.addImage({ path: path.join(__dirname, "assets/nmr_schematic.png"), x: M, y: 2.05, w: 4.9, h: 2.6, altText: "Schematic NMR spectrum with labelled peaks", objectName: "NMR schematic" });
+    s.addText("ภาพประกอบ (สเปกตรัมสมมติ ไม่ใช่ข้อมูลจริง): ความสูงของยอด = ปริมาณสาร", { x: M, y: 4.7, w: 4.9, h: 0.6, fontFace: FONT, fontSize: 12, color: MUTED, margin: 0, isTextBox: true, valign: "top" });
+    arrow(s, 5.62, 3.15, 0.34);
+    const mets = snip.mets;
+    const short = { "L-valine": "L-valine", "glycine": "glycine", "L-Lactic acid": "lactic acid", "lipoproteins": "lipo-\nproteins", "isopropanol": "iso-\npropanol", "Dimethyl sulfone": "dimethyl\nsulfone" };
+    const hdr = (t, hot) => ({ text: t, options: { bold: true, fontFace: FONT, fontSize: 10, align: "center", color: hot ? ORANGE_TXT : INK, margin: 0.03, fill: { color: hot ? ORANGE_BG : TINT } } });
+    const num = (v, hot) => ({ text: String(Math.round(v)), options: { fontFace: FONT, fontSize: 12, align: "center", color: hot ? ORANGE_TXT : INK } });
+    const rows = [[hdr("ตัวอย่าง"), ...mets.map((m) => hdr(short[m], m === "isopropanol" || m === "Dimethyl sulfone"))]];
+    snip.rows.forEach((r) => rows.push([{ text: r.patient + (r.tp === "pre" ? " · ก่อนผ่าตัด" : " · 12 เดือน"), options: { fontFace: FONT, fontSize: 11, bold: true, color: INK } },
+      ...mets.map((m) => num(r[m], m === "isopropanol" || m === "Dimethyl sulfone"))]));
+    s.addTable(rows, { x: 6.05, y: 2.05, w: 6.65, colW: [1.65, 0.833, 0.833, 0.833, 0.833, 0.833, 0.836], rowH: [0.62, 0.5, 0.5, 0.5, 0.5], border: { type: "solid", color: HAIR, pt: 0.75 }, valign: "middle" });
+    s.addText("ตัวเลขจริงจาก MTBLS242 (ผู้ป่วย 2 คน คนละ 2 ตัวอย่าง จากทั้งหมด 21 สาร)", { x: 6.05, y: 4.75, w: 6.65, h: 0.5, fontFace: FONT, fontSize: 12, color: MUTED, margin: 0, isTextBox: true, valign: "top" });
+    const k = [["FaVial", "แถว = ตัวอย่าง 1 หลอด", "106 + 71 ตัวอย่าง"], ["FaFlask", "คอลัมน์ = สาร 1 ชนิด", "ที่ใช้เป็นฟีเจอร์ 21 ตัว"], ["FaTags", "label = ก่อน / หลังผ่าตัด", "สิ่งที่โมเดลต้องทำนาย"]];
+    const w = (CW - 0.6) / 3;
+    k.forEach((r, i) => {
+      const x = M + i * (w + 0.3);
+      card(s, x, 5.45, w, 1.05, "Legend card");
+      badge(s, x + 0.2, 5.62, 0.7, r[0], BLUE, BLUE_BG, "Legend");
+      s.addText([{ text: r[1], options: { bold: true, fontSize: 15, breakLine: true } }, { text: r[2], options: { fontSize: 12, color: MUTED } }],
+        { x: x + 1.05, y: 5.45, w: w - 1.2, h: 1.05, fontFace: FONT, color: INK, margin: 0, isTextBox: true, valign: "middle" });
+    });
   }
 
   // =============== 3. Data ===============
@@ -232,6 +295,29 @@ async function main() {
       s.addText(r[3], { x: hx[1], y, w: hw[1] - 0.2, h: 0.9, fontFace: FONT, fontSize: 14, color: INK, margin: 0, isTextBox: true, valign: "middle" });
       arrow(s, 9.45, y + 0.28, 0.34);
       s.addText(r[4], { x: hx[2], y, w: hw[2] - 0.1, h: 0.9, fontFace: FONT, fontSize: 14, bold: true, color: INK, margin: 0, isTextBox: true, valign: "middle" });
+    });
+  }
+
+  // =============== 5b. Regression to the mean ===============
+  {
+    const s = content("พื้นฐาน  |  regression to the mean", "FaSyncAlt", ORANGE, "ทำไมค่าเริ่มต้น \"ทำนาย\" การเปลี่ยนแปลงได้เอง",
+      "ก่อนเข้ากรณีที่ 1 ขออธิบายปรากฏการณ์ regression to the mean ภาพนี้เป็นข้อมูลสมมติเพื่อประกอบ: คนที่วัดได้สูงที่สุดในครั้งแรก มักวัดได้ต่ำลงในครั้งที่สอง และคนที่ต่ำที่สุดมักสูงขึ้น ทั้งที่ไม่มีอะไรเปลี่ยนจริง เพราะการวัดมีความคลาดเคลื่อน ถ้า label ของเราคือ \"การเปลี่ยนแปลง\" และฟีเจอร์คือ \"ค่าครั้งแรก\" ฟีเจอร์จะทำนาย label ได้เองโดยไม่มีชีววิทยาเลย (~0:35)",
+      "ภาพประกอบด้วยข้อมูลสมมติ ไม่ใช่ข้อมูลจริง. อ้างอิง: Barnett, van der Pols, Dobson (2005) Int J Epidemiol 34:215-220");
+    const cats = ["A", "B", "C", "D", "E"];
+    s.addChart(pres.charts.BAR, [
+      { name: "วัดครั้งที่ 1", labels: cats, values: [9, 6, 5, 4, 1] },
+      { name: "วัดครั้งที่ 2 (ไม่มีอะไรเปลี่ยนจริง)", labels: cats, values: [6.5, 5.5, 5, 4.5, 3.5] },
+    ], chartCommon({ x: M, y: 2.05, w: 6.4, h: 4.2, barDir: "col", chartColors: [BLUE, GRAY], barGapWidthPct: 60, showLegend: true, legendPos: "b", showValue: true,
+      dataLabelPosition: "outEnd", dataLabelFormatCode: "0.0", valAxisMinVal: 0, valAxisMaxVal: 10, valAxisMajorUnit: 2, showCatAxisTitle: true, catAxisTitle: "ผู้ป่วย 5 คน (ข้อมูลสมมติ)",
+      catAxisTitleFontSize: 12, catAxisTitleColor: MUTED }));
+    const pts = [["FaSyncAlt", BLUE, BLUE_BG, "วัดซ้ำ ค่าสุดโต่งมักถอยเข้าหาค่าเฉลี่ย", "คน A สูงสุดในครั้งแรก ครั้งที่สองต่ำลง คน E ต่ำสุด กลับสูงขึ้น เพราะการวัดมีความคลาดเคลื่อน"],
+      ["FaTags", ORANGE, ORANGE_BG, "ถ้า label = \"การเปลี่ยนแปลง\"", "แล้วฟีเจอร์ = \"ค่าครั้งแรก\" ทั้งสองมีค่าเดียวกันเป็นส่วนประกอบ"],
+      ["FaExclamationTriangle", ORANGE, ORANGE_BG, "ฟีเจอร์ \"ทำนาย\" label ได้เอง", "โดยไม่มีชีววิทยาอยู่เลย นี่คือกับดักของกรณีที่ 1"]];
+    pts.forEach((p, i) => {
+      const y = 2.15 + i * 1.4;
+      badge(s, 7.4, y, 0.8, p[0], p[1], p[2], "Point");
+      s.addText([{ text: p[3], options: { bold: true, fontSize: 15, breakLine: true } }, { text: p[4], options: { fontSize: 13, color: MUTED } }],
+        { x: 8.35, y, w: 4.35, h: 1.25, fontFace: FONT, color: INK, margin: 0, isTextBox: true, valign: "top" });
     });
   }
 
