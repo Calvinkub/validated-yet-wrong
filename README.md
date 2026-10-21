@@ -53,9 +53,11 @@ repository (`MTBLS242_forecast/`), which is not part of this repository.
 
 ## Status
 
-Draft. The revised draft is `paper/fixpaper.tex`; its remaining red `	odo{}`
-marks are listed in `paper/FIXPAPER_TODO.md`: make this repository and the
-`mtbls242-forecast-honest` code (commit `637a58e`) public, and add funding and
-advisors. Venue-specific AI-use wording and page length are still to be decided.
+Draft. Branch `fixpaper-revisions` is the working version; the paper is
+`paper/fixpaper.tex` (`paper/main.tex` here is the pre-revision draft), with a
+narrative companion in `paper/story.tex`. One red `\todo{}` remains: cite a
+release tag created on this branch (`paper-v1` points to `main`). Open items
+are listed in `paper/FIXPAPER_TODO.md`. Venue-specific AI-use wording and page
+length are still to be decided.
 
 No licence has been chosen yet.

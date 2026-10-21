@@ -26,7 +26,7 @@
 \begin{document}
 
 \title{Validated, yet Wrong: Four Ways Small-$n$ Metabolomics Machine Learning Passes Standard Checks\\
-\thanks{Code, simulation, fixed analysis designs and verification scripts: \protect\url{https://github.com/Calvinkub/validated-yet-wrong} (tag \texttt{paper-v1}).}}
+\thanks{Code, simulation, fixed analysis designs and verification scripts: \protect\url{https://github.com/Calvinkub/validated-yet-wrong}.}}
 
 \author{
 \IEEEauthorblockN{Chaiyaporn Orrudee}
@@ -52,7 +52,7 @@ audit four of our own earlier analyses of public NMR data and show four
 failure modes in which a standard check passes while the reported result is
 wrong or uninterpretable: (i) an outcome manufactured from the features
 through change scores, (ii) putatively exogenous compounds that a
-feature-removal faithfulness test ranks as highly as endogenous metabolites,
+feature-removal faithfulness test ranks alongside endogenous metabolites,
 (iii) a label perfectly aliased with the sample-collection protocol, and
 (iv) a label whose name does not match what it encodes. For each, we give the
 check it passes and a targeted control that exposes it. In a bariatric-surgery
@@ -161,9 +161,12 @@ A label permutation tests the null hypothesis that features and labels are
 independent \cite{ojala2010}. Rejecting it shows only that \emph{some}
 association exists. If the label is computed from the features, that
 association is guaranteed, and the test answers a question nobody asked.
-The permutation must also refit the model on every permuted label vector:
-permuting labels against fixed out-of-fold scores is not a valid test
-(Section~\ref{sec:sim}); the broader fragility of resampling-based
+The model must also be refitted under the null: permuting labels against
+fixed out-of-fold scores is not a valid test (Section~\ref{sec:sim}).
+Refitting can permute the whole label vector before cross-validation
+\cite{ojala2010} or, when labels are defined inside each training fold,
+permute each fold's training labels; the two schemes differ, and the scheme
+used should be stated. The broader fragility of resampling-based
 validation on small cohorts is well established
 \cite{westerhuis2008, broadhurst2006, varma2006, varoquaux2018}.
 
@@ -272,9 +275,16 @@ keeps the false-positive rate close to nominal.
 \textbf{Original design} (raw change, $\geq$9 of 11 markers, putative
 contaminants included). The trained model reaches PR-AUC \verified{0.683}
 against a prevalence of \verified{0.437} (our originally reported
-\verified{0.671} does not reproduce exactly on re-run). A label permutation
-with the model refitted on every permutation (1{,}000 permutations) gives
-$p=\verified{0.001}$, the floor. Yet the learn-nothing scorer reaches
+\verified{0.671} does not reproduce exactly on re-run). A permutation test
+that, in every fold, permutes the training labels, reruns the penalty
+selection and refits the model, scoring the unchanged held-out labels
+(1{,}000 replicates), gives $p=\verified{0.001}$, the floor. This per-fold
+scheme is not the whole-vector permutation of \cite{ojala2010}; in our
+simulation it was close to nominal but slightly liberal for the residualised
+outcomes (Section~\ref{sec:sim}), and we have not checked its calibration for
+the sign-constrained model. Because the coupling makes features and label
+dependent by construction, nothing below rests on the exact value. Yet the
+learn-nothing scorer reaches
 \verified{0.709}, above the model (gap \verified{$-0.025$}, repeat-level
 interval [\verified{$-0.047$}, \verified{$-0.006$}]). Consistent with this,
 the observed lift (\verified{1.57$\times$}) does not clear the
@@ -327,8 +337,9 @@ Pairing-null lift, median & 1.04 & 1.05 \\
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/case1_nulls.pdf}
-\caption{Original (withdrawn) design. (a) Label-permutation null of
-average precision, model refitted per permutation. (b) Pairing-destroyed null
+\caption{Original (withdrawn) design. (a) Permutation null of average
+precision, with the training labels permuted inside each fold and the model
+refitted. (b) Pairing-destroyed null
 of lift. The label permutation rejects. The pairing-destroyed null sits above
 the observed model, which is expected by construction
 (Section~\ref{sec:sim}) and means only that the model has not shown anything
@@ -347,7 +358,8 @@ logistic regression with the same repeated CV as Case~1. One deviation from
 the pre-registration: after a single timing run, which printed $K$,
 prevalence and PR-AUC for one site, we reduced the number of null replicates
 for run time (300 permutations for the main designs, 200 for the
-exogenous-compound variant, 150 refitted pairing replicates); designs,
+exogenous-compound variant, both with the per-fold scheme of Case~1, and 150
+refitted pairing replicates); designs,
 markers and the $K$ rule were not changed. This is a different, acute setting
 (hours after surgery, not a year), so it tests the statistical artefact, not
 the surgical biology. With 47 patients every interval is wide
@@ -445,18 +457,20 @@ on it.
 At $k=3$, removing the putatively exogenous trio gives PR-AUC
 \verified{0.954} (null percentile \verified{0.2}); removing three endogenous
 markers (lipoproteins, L-valine, L-tyrosine) gives \verified{0.959}
-(percentile \verified{1.2}). The \verified{0.006} gap is far smaller than the
-fold standard deviation of about \verified{0.03}. ROAR treats the two groups
-alike.
+(percentile \verified{1.2}). Both removals fall below almost all random
+removals. The observed gap, \verified{0.0056}, is smaller than the fold
+standard deviation of about \verified{0.03}; we made no formal equivalence
+test. ROAR gives no sign of which trio is endogenous.
 
 A spiked positive control makes the point without relying on the identity of
 any real compound. We add a synthetic feature $d\,y + \mathcal{N}(0,1)$,
 which depends only on the label and carries no biology, and measure both its
 SHAP rank and the drop in PR-AUC when it alone is removed and the model
 retrained (10 draws per $d$, Table~\ref{tab:spike}). At $d=1.75$, an effect
-size similar to dimethyl sulfone's, the spike is ranked first by both, and
-removing it costs more than removing any real metabolite (\verified{0.0127}
-vs.\ \verified{0.0073} for dimethyl sulfone). Removal-based importance ranks
+size similar to dimethyl sulfone's, the spike has median rank 1 by both
+measures (range 1--2; SHAP ranks it first in 6 of 10 draws), and its median
+removal cost exceeds that of every real metabolite (\verified{0.0127} vs.\
+\verified{0.0073} for dimethyl sulfone). Removal-based importance ranks
 a feature by how much non-redundant signal it carries, whatever its origin;
 a low ROAR curve cannot by itself support a biological reading of the
 top-ranked features.
@@ -492,7 +506,10 @@ features are putatively exogenous or endogenous.}
 This is one cohort, and its label is confounded with surgery (Case~4).
 Random draws overlap and share folds, so percentiles below the band mean
 ``outside the random range,'' not calibrated $p$-values. Attribution used
-all 177 samples, which makes informed removal slightly optimistic. The
+all 177 samples, including those later used for evaluation, so the informed
+removals are subject to selection bias of unquantified magnitude
+\cite{varma2006}; we treat the ROAR comparisons as exploratory. The spiked
+control makes its point without relying on them. The
 multi-seed ranking places L-valine above lipoproteins, the reverse of the
 original ranking; we kept the original endogenous trio for comparability.
 Both trios were chosen after the original analysis, not in advance.
@@ -539,10 +556,14 @@ Sex is imbalanced (controls \verified{66.7\%} male vs.\ cases
 deposited: the control numbering yields exactly 12 volunteers, matching the
 protocol, while the 48 diabetic samples come from 28--30 patients whose
 sample-to-patient membership cannot be recovered. A numbering heuristic used
-in our original analysis merged at least three pairs of distinct patients.
-Merging errs toward conservative CV, and ungrouped CV (\verified{0.969})
-differs little, so grouping does not drive the result; the design does, and
-it cannot be removed by any analysis of these data.
+in our original analysis merged at least three pairs of distinct patients,
+which is conservative for those pairs; because membership is unknown, it may
+also have split one patient's samples across groups. Grouping does change the
+score: over the same 20 seeds, grouped CV gives \verified{0.911}
+(\verified{0.906} under an alternative, protocol-consistent grouping into 30
+groups) and ungrouped CV \verified{0.969}. The confound, however, does not
+depend on grouping: it lies in the design, and no choice of folds or other
+analysis of these data can remove it.
 
 \begin{table}[t]
 \centering
@@ -578,10 +599,10 @@ meaning. The sample sheet records no body-mass
 index, so whether any twelve-month patient is in fact non-obese cannot be
 checked; a year after bariatric surgery many patients need not be.
 
-A classifier trained on this label learns everything that differs between a
+A classifier trained on this label can learn anything that differs between a
 patient before surgery and the same patient a year later: weight loss, but
-also post-surgical diet, supplements and medication, fasting state, and the
-year-long gap in sample storage. Its score is not evidence that the serum
+potentially also post-surgical diet, supplements and medication, fasting
+state, and the year-long gap in sample storage. Its score is not evidence that the serum
 profile identifies obesity in a general population, where lean and obese
 people differ in age, sex and lifestyle rather than in surgical history. The
 correct description is ``pre- vs.\ post-bariatric-surgery classification,''
@@ -615,10 +636,13 @@ reproduces the median baseline--change correlation of $-0.62$ observed in
 MTBLS242. Each dataset is tested four ways at $\alpha=0.05$, each with 200
 null replicates and the model refitted on every replicate:
 \begin{enumerate}
-  \item \textbf{Label permutation} on the raw-change outcome.
+  \item \textbf{Label permutation} on the raw-change outcome: the whole label
+        vector is permuted before cross-validation.
   \item \textbf{Pairing-destroyed null} on lift (AP over prevalence).
   \item \textbf{Per-marker residualisation}: within each training fold,
-        regress change$_j$ on baseline$_j$; label from residuals; permute.
+        regress change$_j$ on baseline$_j$; label from residuals. Because
+        the labels are fold-specific, the null permutes each fold's training
+        labels and keeps the held-out labels fixed.
   \item \textbf{Joint residualisation}: as (3), but regress change$_j$ on all
         11 baselines.
 \end{enumerate}
@@ -629,11 +653,12 @@ on each permutation \cite{ojala2010} gave 5.3\%, so all tests refit.
 \subsection{Results}
 Table~\ref{tab:sim} and Fig.~\ref{fig:sim} give the rejection rates.
 
-\textbf{Label permutation is wrong, and more so with more data.} With no
+\textbf{Label permutation misleads, and more so with more data.} With no
 individual response, it rejected in 26\% of datasets at $n=50$ and 100\% at
-$n=500$ when $r=0.25$; even at $r=0.75$ it reached 90\% at $n=500$.
-More subjects estimate the regression-to-the-mean artefact more precisely;
-they do not remove it.
+$n=500$ when $r=0.25$; even at $r=0.75$ it reached 90\% at $n=500$. Each
+rejection is correct about independence, which the coupling makes false,
+and wrong as evidence of a forecast. More subjects estimate the
+regression-to-the-mean artefact more precisely; they do not remove it.
 
 \textbf{Per-marker residualisation is not enough.} Residualising each
 marker's change on its own baseline left false-positive rates of 8--29\%,
@@ -712,12 +737,16 @@ sample size and reliability.
 \subsection{A checklist for small-$n$ metabolomics ML}
 \begin{enumerate}
   \item If the outcome is computed from the features, do not rely on a
-        label permutation. Residualise change on \emph{all} baselines inside
-        each training fold, and report a pairing-destroyed null as a
-        diagnostic.
-  \item Refit the model inside every permutation replicate, and check that
-        the observed statistic does not sit below the whole null, which
-        signals a mis-specified null rather than strong evidence.
+        label permutation. If the target is change beyond what baseline
+        predicts, residualise change on \emph{all} baselines inside each
+        training fold; if baseline-dependent change is itself of interest,
+        this removes it, and repeated baseline measurements are needed
+        instead. In either case, report a pairing-destroyed null as a
+        one-sided diagnostic.
+  \item Refit the model inside every permutation replicate and state the
+        permutation scheme. If the observed statistic sits below the whole
+        null, audit the null construction, scoring pipeline, model
+        constraints and fitting procedure before reading the $p$-value.
   \item Include a learn-nothing baseline and report the gap with an interval
         that resamples subjects.
   \item Audit features for exogenous compounds; report results with and
@@ -763,20 +792,23 @@ MTBLS242, MTBLS1 and MTBLS881 are public through MetaboLights \cite{haug2020};
 the datasets are not redistributed. The simulation, the Case~2, 3 and 4
 analyses, intermediate results and the pre-registration file for the MTBLS881
 replication are in \url{https://github.com/Calvinkub/validated-yet-wrong}
-(tag \texttt{paper-v1}) \todo{repository returns 404 (private) as of
-18 Oct.\ 2026: make it public and create the tag}. Each experiment folder
+\todo{tag: \texttt{paper-v1} points to the \texttt{main} branch; create a
+new tag on the final commit of \texttt{fixpaper-revisions} and cite it here
+and in the first-page footnote}. Each experiment folder
 contains a \texttt{RESULTS.md} listing every reported number with its script,
 random seed and command. The simulation runs with
 \texttt{python simulation/sim\_pairing\_null.py} and takes about 11 minutes on
 8 cores; \texttt{--check} runs the pure-noise sanity test. The original
 analyses audited in Cases~2--4 are public \cite{bridge2026, roar2026}. Cases~1
 and 1b import the outcome, model and control code from our earlier
-\texttt{mtbls242-forecast-honest} repository \cite{honest2026}, which must be
-obtained separately \todo{commit \texttt{637a58e} is not on GitHub: push it
-and add the URL, or state that the code is available on request}.
+\texttt{mtbls242-forecast-honest} repository \cite{honest2026} (branch
+\texttt{honest-evaluation}, commit \texttt{637a58e}), which must be obtained
+separately.
 
 \section*{Acknowledgment}
-\todo{Funding, advisors.}
+The authors thank Asst.\ Prof.\ Dr.\ Nont Kanungsukkasem, School of
+Information Technology, King Mongkut's Institute of Technology Ladkrabang, for
+advising this work. This research received no specific funding.
 
 \section*{Use of Generative AI}
 The authors used Claude (Anthropic) to assist with analysis code, the
@@ -815,7 +847,7 @@ of this paper.
 \bibitem{engelke2005} U. F. H. Engelke \textit{et al.}, ``Dimethyl sulfone in human cerebrospinal fluid and blood plasma confirmed by one-dimensional $^1$H and two-dimensional $^1$H-$^{13}$C NMR,'' \textit{NMR Biomed.}, vol. 18, no. 5, pp. 331--336, Aug. 2005, doi: 10.1002/nbm.966.
 \bibitem{bridge2026} K. C. Shomwiwat, ``Bridge\_ai\_summit\_nmr\_2026,'' GitHub repository, commits \texttt{17e18df} (Case~4) and \texttt{0088e38} (Case~3), 2026. [Online]. Available: \url{https://github.com/Calvinkub/Bridge_ai_summit_nmr_2026}
 \bibitem{roar2026} C. Orrudee, ``ROAR,'' GitHub repository, commit \texttt{f220cd2} (Case~2), 2026. [Online]. Available: \url{https://github.com/Chaiporn2005/ROAR}
-\bibitem{honest2026} ``mtbls242-forecast-honest,'' code repository, branch \texttt{honest-evaluation}, commit \texttt{637a58e} (Cases~1 and 1b), 2026. \todo{add author and URL once public}
+\bibitem{honest2026} K. C. Shomwiwat, ``mtbls242-forecast-honest,'' GitHub repository, branch \texttt{honest-evaluation}, commit \texttt{637a58e} (Cases~1 and 1b), 2026. [Online]. Available: \url{https://github.com/Calvinkub/mtbls242-forecast-honest}
 \bibitem{maltesen2020} R. G. Maltesen, R. Wimmer, and B. S. Rasmussen, ``A longitudinal serum NMR-based metabolomics dataset of ischemia-reperfusion injury in adult cardiac surgery,'' \textit{Sci. Data}, vol. 7, Art. no. 198, 2020, doi: 10.1038/s41597-020-0545-0.
 \end{thebibliography}
 
